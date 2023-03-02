@@ -12,9 +12,6 @@ tibble
 \description{
 Ames data set
 }
-\details{
-The data set looks like:
-}
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_ames()
 #> # A tibble: 2,930 x 74

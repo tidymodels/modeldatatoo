@@ -12,9 +12,6 @@ tibble
 \description{
 elevators data set
 }
-\details{
-The data set looks like:
-}
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_elevators()
 #> # A tibble: 35,042 x 25

@@ -3,13 +3,6 @@
 #' @return tibble
 #'
 #' @details
-#' ```{r echo=FALSE}
-#' data_elevators <- function() {
-#'   pins::pin_read(pins::board_folder("data-raw/"), "elevators")
-#' }
-#' ```
-#'
-#' The data set looks like:
 #'
 #' # tibble print
 #'

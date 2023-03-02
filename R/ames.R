@@ -3,13 +3,6 @@
 #' @return tibble
 #'
 #' @details
-#' ```{r echo=FALSE}
-#' data_ames <- function() {
-#'   pins::pin_read(pins::board_folder("data-raw/"), "ames")
-#' }
-#' ```
-#'
-#' The data set looks like:
 #'
 #' # tibble print
 #'

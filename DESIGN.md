@@ -24,13 +24,6 @@ Each data set is accompanied by a function that is used to fetch the data set. T
     #' @return tibble
     #'
     #' @details
-    #' ```{r echo=FALSE}
-    #' data_name_of_data_set <- function() {
-    #'   pins::pin_read(pins::board_folder("data-raw/"), "name_of_data_set")
-    #' }
-    #' ```
-    #'
-    #' The data set looks like:
     #'
     #' # tibble print
     #'
