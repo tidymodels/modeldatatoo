@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# modeldatatoo
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+modeldatatoo contains more data sets used in documentation and testing for tidymodels packages. The package also contains a suite of simulation functions for classification and regression data. This is extension to the [modeldata](https://modeldata.tidymodels.org/) package.
+
+## Installation
+
+You can install the development version of modeldatatoo from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EmilHvitfeldt/modeldatatoo")
+```
+
+## Example
+
+```{r echo=FALSE}
+data_elevators <- function() {
+  pins::pin_read(pins::board_folder("data-raw/"), "elevators")
+}
+```
+
+All the data sets in this package can be acccessed by functions which are prefixed with `data_`, and you call them like functions
+
+```{r}
+data_elevators()
+```
+
+The [pins](https://pins.rstudio.com/) package is used under the hood to read, download, and cache the data.
