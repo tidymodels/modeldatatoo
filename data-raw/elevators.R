@@ -5,4 +5,9 @@ library(janitor)
 
 data("elevators", package = "elevators")
 
-readr::write_rds(elevators, "data-raw/elevators.rds")
+library(pins)
+
+board <- board_folder("data-raw/", versioned = FALSE)
+
+board |>
+  pin_write(elevators, "elevators", type = "rds")

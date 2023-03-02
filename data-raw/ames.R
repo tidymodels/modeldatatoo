@@ -8,4 +8,9 @@ data("ames", package = "modeldata")
 ames <- ames |>
   clean_names()
 
-readr::write_rds(ames, "data-raw/ames.rds")
+library(pins)
+
+board <- board_folder("data-raw/", versioned = FALSE)
+
+board |>
+  pin_write(ames, "ames", type = "rds")
