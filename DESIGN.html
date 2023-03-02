@@ -60,7 +60,7 @@
 <li><p>Run <code>usethis::use_r("name_of_data_set")</code></p></li>
 <li>
 <p>Populate with the following code. Changing <code>name_of_data_set</code> to reflect the name you used earlier.</p>
-<p>#’ name_of_data_set data set #’ #’ @return tibble #’ #’ @details #’ <code>{r echo=FALSE}  #' data_name_of_data_set &lt;- function() {  #'   pins::pin_read(pins::board_folder("data-raw/"), "name_of_data_set")  #' }  #'</code> #’ #’ The data set looks like: #’ #’ # tibble print #’ #’ <code>{r}  #' data_name_of_data_set()  #'</code> #’ #’ # glimpse() #’ #’ <code>{r}  #' tibble::glimpse(data_name_of_data_set())  #'</code> #’ #’ @examples #’  #’ @export data_name_of_data_set &lt;- function() { pins::pin_read(modeldatatoo_board, “name_of_data_set”) }</p>
+<p>#’ name_of_data_set data set #’ #’ @return tibble #’ #’ @details #’ #’ # tibble print #’ #’ <code>{r}  #' data_name_of_data_set()  #'</code> #’ #’ # glimpse() #’ #’ <code>{r}  #' tibble::glimpse(data_name_of_data_set())  #'</code> #’ #’ @examples #’  #’ @export data_name_of_data_set &lt;- function() { pins::pin_read(modeldatatoo_board, “name_of_data_set”) }</p>
 </li>
 <li><p>Add more information under @details and @source.</p></li>
 <li><p>Run <code>devtools::document()</code></p></li>
