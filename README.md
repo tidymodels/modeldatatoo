@@ -18,7 +18,7 @@ You can install the development version of modeldatatoo from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("EmilHvitfeldt/modeldatatoo")
+devtools::install_github("tidymodels/modeldatatoo")
 ```
 
 ## Example
