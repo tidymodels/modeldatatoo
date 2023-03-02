@@ -23,8 +23,8 @@ devtools::install_github("EmilHvitfeldt/modeldatatoo")
 
 ## Example
 
-All the data sets in this package can be acccessed by functions which
-are prefixed with `data_`, and you call them like functions
+All the data sets in this package can be accessed by functions which are
+prefixed with `data_`, and you call them like functions
 
 ``` r
 data_elevators()
