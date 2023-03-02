@@ -25,7 +25,7 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
       <ul class="navbar-nav"><li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/EmilHvitfeldt/modeldatatoo/" aria-label="github">
+  <a class="external-link nav-link" href="https://github.com/tidymodels/modeldatatoo/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -38,7 +38,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Design</h1>
-      <small class="dont-index">Source: <a href="https://github.com/EmilHvitfeldt/modeldatatoo/blob/HEAD/DESIGN.md" class="external-link"><code>DESIGN.md</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/tidymodels/modeldatatoo/blob/HEAD/DESIGN.md" class="external-link"><code>DESIGN.md</code></a></small>
     </div>
 
 
@@ -57,6 +57,8 @@
 <p>board &lt;- board_folder(“data-raw/”, versioned = FALSE)</p>
 <p>board |&gt; pin_write(name_of_data_set, “name_of_data_set”, type = “rds”)</p>
 </li>
+<li><p>Push changes to Main.</p></li>
+<li><p>Update <code>modeldatatoo_board</code> in <a href="R/aaa-board.R">R/aaa-board.R</a> to include new data set.</p></li>
 <li><p>Run <code>usethis::use_r("name_of_data_set")</code></p></li>
 <li>
 <p>Populate with the following code. Changing <code>name_of_data_set</code> to reflect the name you used earlier.</p>
