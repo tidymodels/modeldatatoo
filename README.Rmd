@@ -27,8 +27,8 @@ modeldatatoo contains more data sets used in documentation and testing for tidym
 You can install the development version of modeldatatoo from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("tidymodels/modeldatatoo")
+# install.packages("pak")
+pak::pak("tidymodels/modeldatatoo")
 ```
 
 ## Example

@@ -4,6 +4,10 @@
 # modeldatatoo
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/tidymodels/modeldatatoo/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tidymodels/modeldatatoo?branch=main)
 <!-- badges: end -->
 
 modeldatatoo contains more data sets used in documentation and testing
@@ -17,8 +21,8 @@ You can install the development version of modeldatatoo from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("tidymodels/modeldatatoo")
+# install.packages("pak")
+pak::pak("tidymodels/modeldatatoo")
 ```
 
 ## Example
