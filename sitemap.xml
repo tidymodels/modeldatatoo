@@ -4,6 +4,9 @@
     <loc>https://tidymodels.github.io/modeldatatoo/404.html</loc>
   </url>
   <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
     <loc>https://tidymodels.github.io/modeldatatoo/DESIGN.html</loc>
   </url>
   <url>
@@ -32,5 +35,8 @@
   </url>
   <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/internal_board.html</loc>
+  </url>
+  <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/modeldatatoo-package.html</loc>
   </url>
 </urlset>
