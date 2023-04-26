@@ -1,0 +1,9 @@
+file: animals.rds
+file_size: 1008570
+pin_hash: 67a7b64fd6b634f2
+type: rds
+title: 'animals: a pinned 610 x 48 data frame'
+description: ~
+tags: ~
+created: 20230426T213845Z
+api_version: 1.0
