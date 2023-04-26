@@ -15,25 +15,25 @@ elevators data set
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_elevators()
 #> # A tibble: 35,042 x 25
-#>    device_number bin     tax_b~1 tax_lot house~2 stree~3 zip_c~4 borough devic~5
-#>    <chr>         <chr>   <chr>   <chr>   <chr>   <chr>   <chr>   <fct>   <chr>  
-#>  1 1D10028       1024795 1021    26      1614    BROADW~ 10019   Manhat~ Dumbwa~
-#>  2 1D10094       1041822 1392    25      53      E 77TH~ 10021   Manhat~ Dumbwa~
-#>  3 1D10097       1038223 1323    1       201     E 49 ST 10017   Manhat~ Dumbwa~
-#>  4 1D10146       1080443 1274    6       40      CENTRA~ <NA>    Manhat~ Dumbwa~
-#>  5 1D10200       1085777 1074    24      651     TENTH ~ <NA>    Manhat~ Dumbwa~
-#>  6 1D10301       1002075 181     16      179     FRANKL~ 10013   Manhat~ Dumbwa~
-#>  7 1D10302       1010518 606     4       121     WEST 1~ 10011   Manhat~ Dumbwa~
-#>  8 1D10303       1085955 1329    1       915     3 AVEN~ 10022   Manhat~ Dumbwa~
-#>  9 1D10304       1044058 1430    5       220     E. 76 ~ 10021   Manhat~ Dumbwa~
-#> 10 1D10305       1087468 1951    4       133     MORNIN~ <NA>    Manhat~ Dumbwa~
-#> # ... with 35,032 more rows, 16 more variables: lastper_insp_date <date>,
-#> #   approval_date <date>, manufacturer <chr>, travel_distance <chr>,
-#> #   speed_fpm <dbl>, capacity_lbs <dbl>, car_buffer_type <chr>,
-#> #   governor_type <chr>, machine_type <chr>, safety_type <chr>,
-#> #   mode_operation <chr>, floor_from <chr>, floor_to <chr>, latitude <dbl>,
-#> #   longitude <dbl>, elevators_per_building <int>, and abbreviated variable
-#> #   names 1: tax_block, 2: house_number, 3: street_name, 4: zip_code, ...
+#>    device_number bin     tax_block tax_lot house_number street_name     zip_code
+#>    <chr>         <chr>   <chr>     <chr>   <chr>        <chr>           <chr>   
+#>  1 1D10028       1024795 1021      26      1614         BROADWAY        10019   
+#>  2 1D10094       1041822 1392      25      53           E 77TH ST       10021   
+#>  3 1D10097       1038223 1323      1       201          E 49 ST         10017   
+#>  4 1D10146       1080443 1274      6       40           CENTRAL PARK S~ <NA>    
+#>  5 1D10200       1085777 1074      24      651          TENTH AVENUE    <NA>    
+#>  6 1D10301       1002075 181       16      179          FRANKLIN STREET 10013   
+#>  7 1D10302       1010518 606       4       121          WEST 10 STREET  10011   
+#>  8 1D10303       1085955 1329      1       915          3 AVENUE        10022   
+#>  9 1D10304       1044058 1430      5       220          E. 76 ST        10021   
+#> 10 1D10305       1087468 1951      4       133          MORNINGSIDE AV~ <NA>    
+#> # i 35,032 more rows
+#> # i 18 more variables: borough <fct>, device_type <chr>,
+#> #   lastper_insp_date <date>, approval_date <date>, manufacturer <chr>,
+#> #   travel_distance <chr>, speed_fpm <dbl>, capacity_lbs <dbl>,
+#> #   car_buffer_type <chr>, governor_type <chr>, machine_type <chr>,
+#> #   safety_type <chr>, mode_operation <chr>, floor_from <chr>, floor_to <chr>,
+#> #   latitude <dbl>, longitude <dbl>, elevators_per_building <int>
 }\if{html}{\out{</div>}}
 }
 

@@ -15,25 +15,25 @@ Ames data set
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_ames()
 #> # A tibble: 2,930 x 74
-#>    ms_sub~1 ms_zo~2 lot_f~3 lot_a~4 street alley lot_s~5 land_~6 utili~7 lot_c~8
-#>  * <fct>    <fct>     <dbl>   <int> <fct>  <fct> <fct>   <fct>   <fct>   <fct>  
-#>  1 One_Sto~ Reside~     141   31770 Pave   No_A~ Slight~ Lvl     AllPub  Corner 
-#>  2 One_Sto~ Reside~      80   11622 Pave   No_A~ Regular Lvl     AllPub  Inside 
-#>  3 One_Sto~ Reside~      81   14267 Pave   No_A~ Slight~ Lvl     AllPub  Corner 
-#>  4 One_Sto~ Reside~      93   11160 Pave   No_A~ Regular Lvl     AllPub  Corner 
-#>  5 Two_Sto~ Reside~      74   13830 Pave   No_A~ Slight~ Lvl     AllPub  Inside 
-#>  6 Two_Sto~ Reside~      78    9978 Pave   No_A~ Slight~ Lvl     AllPub  Inside 
-#>  7 One_Sto~ Reside~      41    4920 Pave   No_A~ Regular Lvl     AllPub  Inside 
-#>  8 One_Sto~ Reside~      43    5005 Pave   No_A~ Slight~ HLS     AllPub  Inside 
-#>  9 One_Sto~ Reside~      39    5389 Pave   No_A~ Slight~ Lvl     AllPub  Inside 
-#> 10 Two_Sto~ Reside~      60    7500 Pave   No_A~ Regular Lvl     AllPub  Inside 
-#> # ... with 2,920 more rows, 64 more variables: land_slope <fct>,
-#> #   neighborhood <fct>, condition_1 <fct>, condition_2 <fct>, bldg_type <fct>,
-#> #   house_style <fct>, overall_cond <fct>, year_built <int>,
+#>    ms_sub_class           ms_zoning lot_frontage lot_area street alley lot_shape
+#>  * <fct>                  <fct>            <dbl>    <int> <fct>  <fct> <fct>    
+#>  1 One_Story_1946_and_Ne~ Resident~          141    31770 Pave   No_A~ Slightly~
+#>  2 One_Story_1946_and_Ne~ Resident~           80    11622 Pave   No_A~ Regular  
+#>  3 One_Story_1946_and_Ne~ Resident~           81    14267 Pave   No_A~ Slightly~
+#>  4 One_Story_1946_and_Ne~ Resident~           93    11160 Pave   No_A~ Regular  
+#>  5 Two_Story_1946_and_Ne~ Resident~           74    13830 Pave   No_A~ Slightly~
+#>  6 Two_Story_1946_and_Ne~ Resident~           78     9978 Pave   No_A~ Slightly~
+#>  7 One_Story_PUD_1946_an~ Resident~           41     4920 Pave   No_A~ Regular  
+#>  8 One_Story_PUD_1946_an~ Resident~           43     5005 Pave   No_A~ Slightly~
+#>  9 One_Story_PUD_1946_an~ Resident~           39     5389 Pave   No_A~ Slightly~
+#> 10 Two_Story_1946_and_Ne~ Resident~           60     7500 Pave   No_A~ Regular  
+#> # i 2,920 more rows
+#> # i 67 more variables: land_contour <fct>, utilities <fct>, lot_config <fct>,
+#> #   land_slope <fct>, neighborhood <fct>, condition_1 <fct>, condition_2 <fct>,
+#> #   bldg_type <fct>, house_style <fct>, overall_cond <fct>, year_built <int>,
 #> #   year_remod_add <int>, roof_style <fct>, roof_matl <fct>,
 #> #   exterior_1st <fct>, exterior_2nd <fct>, mas_vnr_type <fct>,
-#> #   mas_vnr_area <dbl>, exter_cond <fct>, foundation <fct>, bsmt_cond <fct>,
-#> #   bsmt_exposure <fct>, bsmt_fin_type_1 <fct>, bsmt_fin_sf_1 <dbl>, ...
+#> #   mas_vnr_area <dbl>, exter_cond <fct>, foundation <fct>, ...
 }\if{html}{\out{</div>}}
 }
 

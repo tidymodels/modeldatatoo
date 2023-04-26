@@ -15,25 +15,25 @@ animals data set
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_animals()
 #> # A tibble: 610 x 48
-#>    text   colour lifes~1 weight kingdom class phylum diet  conse~2 order scien~3
-#>    <chr>  <chr>  <chr>   <chr>  <chr>   <chr> <chr>  <chr> <chr>   <chr> <chr>  
-#>  1 "Aard~ Brown~ 23 yea~ 60kg ~ Animal~ Mamm~ Chord~ Omni~ Least ~ Tubu~ Orycte~
-#>  2 "Abys~ Fawn,~ <NA>    <NA>   <NA>    <NA>  <NA>   <NA>  <NA>    <NA>  <NA>   
-#>  3 "Adel~ Black~ 10 - 2~ 3kg -~ Animal~ Aves  Chord~ Carn~ Least ~ Sphe~ Pygosc~
-#>  4 "Affe~ Black~ <NA>    <NA>   <NA>    <NA>  <NA>   <NA>  <NA>    <NA>  <NA>   
-#>  5 "Afgh~ Black~ <NA>    <NA>   <NA>    <NA>  <NA>   <NA>  <NA>    <NA>  <NA>   
-#>  6 "Afri~ Grey,~ 60 - 7~ 3,600~ Animal~ Mamm~ Chord~ Herb~ Threat~ Prob~ Loxodo~
-#>  7 "Afri~ Black~ 15 - 2~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least ~ Carn~ Civett~
-#>  8 "Afri~ Brown~ 8 - 15~ 25g -~ Animal~ Amph~ Chord~ Carn~ Least ~ Anura Xenopu~
-#>  9 "Afri~ Grey,~ 60 - 7~ 900kg~ Animal~ Mamm~ Chord~ Herb~ Endang~ Prob~ Loxodo~
-#> 10 "Afri~ Black~ 15 - 2~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least ~ Carn~ Nandin~
-#> # ... with 600 more rows, 37 more variables: skin_type <chr>, habitat <chr>,
-#> #   predators <chr>, family <chr>, lifestyle <chr>, average_litter_size <chr>,
-#> #   genus <chr>, top_speed <chr>, favourite_food <chr>, main_prey <chr>,
-#> #   type <chr>, common_name <chr>, group <chr>, size <chr>,
-#> #   distinctive_features <chr>, size_l <chr>, origin <chr>,
-#> #   special_features <chr>, location <chr>, number_of_species <chr>,
-#> #   average_clutch_size <chr>, size_h <chr>, group_behaviour <chr>, ...
+#>    text    colour lifespan weight kingdom class phylum diet  conservation_status
+#>    <chr>   <chr>  <chr>    <chr>  <chr>   <chr> <chr>  <chr> <chr>              
+#>  1 "Aardv~ Brown~ 23 years 60kg ~ Animal~ Mamm~ Chord~ Omni~ Least Concern      
+#>  2 "Abyss~ Fawn,~ <NA>     <NA>   <NA>    <NA>  <NA>   <NA>  <NA>               
+#>  3 "Adeli~ Black~ 10 - 20~ 3kg -~ Animal~ Aves  Chord~ Carn~ Least Concern      
+#>  4 "Affen~ Black~ <NA>     <NA>   <NA>    <NA>  <NA>   <NA>  <NA>               
+#>  5 "Afgha~ Black~ <NA>     <NA>   <NA>    <NA>  <NA>   <NA>  <NA>               
+#>  6 "Afric~ Grey,~ 60 - 70~ 3,600~ Animal~ Mamm~ Chord~ Herb~ Threatened         
+#>  7 "Afric~ Black~ 15 - 20~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least Concern      
+#>  8 "Afric~ Brown~ 8 - 15 ~ 25g -~ Animal~ Amph~ Chord~ Carn~ Least Concern      
+#>  9 "Afric~ Grey,~ 60 - 70~ 900kg~ Animal~ Mamm~ Chord~ Herb~ Endangered         
+#> 10 "Afric~ Black~ 15 - 20~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least Concern      
+#> # i 600 more rows
+#> # i 39 more variables: order <chr>, scientific_name <chr>, skin_type <chr>,
+#> #   habitat <chr>, predators <chr>, family <chr>, lifestyle <chr>,
+#> #   average_litter_size <chr>, genus <chr>, top_speed <chr>,
+#> #   favourite_food <chr>, main_prey <chr>, type <chr>, common_name <chr>,
+#> #   group <chr>, size <chr>, distinctive_features <chr>, size_l <chr>,
+#> #   origin <chr>, special_features <chr>, location <chr>, ...
 }\if{html}{\out{</div>}}
 }
 
