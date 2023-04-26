@@ -61,25 +61,25 @@
     <h2 id="tibble-print">tibble print<a class="anchor" aria-label="anchor" href="#tibble-print"></a></h2>
     <p></p><div class="sourceCode r"><pre><code><span><span class="fu"><a href="../reference/data_elevators.html">data_elevators</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 35,042 x 25</span></span>
-<span><span class="co">#&gt;    device_number bin     tax_b~1 tax_lot house~2 stree~3 zip_c~4 borough devic~5</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;fct&gt;   &lt;chr&gt;  </span></span>
-<span><span class="co">#&gt;  1 1D10028       1024795 1021    26      1614    BROADW~ 10019   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  2 1D10094       1041822 1392    25      53      E 77TH~ 10021   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  3 1D10097       1038223 1323    1       201     E 49 ST 10017   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  4 1D10146       1080443 1274    6       40      CENTRA~ &lt;NA&gt;    Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  5 1D10200       1085777 1074    24      651     TENTH ~ &lt;NA&gt;    Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  6 1D10301       1002075 181     16      179     FRANKL~ 10013   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  7 1D10302       1010518 606     4       121     WEST 1~ 10011   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  8 1D10303       1085955 1329    1       915     3 AVEN~ 10022   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt;  9 1D10304       1044058 1430    5       220     E. 76 ~ 10021   Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt; 10 1D10305       1087468 1951    4       133     MORNIN~ &lt;NA&gt;    Manhat~ Dumbwa~</span></span>
-<span><span class="co">#&gt; # ... with 35,032 more rows, 16 more variables: lastper_insp_date &lt;date&gt;,</span></span>
-<span><span class="co">#&gt; #   approval_date &lt;date&gt;, manufacturer &lt;chr&gt;, travel_distance &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   speed_fpm &lt;dbl&gt;, capacity_lbs &lt;dbl&gt;, car_buffer_type &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   governor_type &lt;chr&gt;, machine_type &lt;chr&gt;, safety_type &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   mode_operation &lt;chr&gt;, floor_from &lt;chr&gt;, floor_to &lt;chr&gt;, latitude &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   longitude &lt;dbl&gt;, elevators_per_building &lt;int&gt;, and abbreviated variable</span></span>
-<span><span class="co">#&gt; #   names 1: tax_block, 2: house_number, 3: street_name, 4: zip_code, ...</span></span></code></pre><p></p></div>
+<span><span class="co">#&gt;    device_number bin     tax_block tax_lot house_number street_name     zip_code</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;           &lt;chr&gt;   </span></span>
+<span><span class="co">#&gt;  1 1D10028       1024795 1021      26      1614         BROADWAY        10019   </span></span>
+<span><span class="co">#&gt;  2 1D10094       1041822 1392      25      53           E 77TH ST       10021   </span></span>
+<span><span class="co">#&gt;  3 1D10097       1038223 1323      1       201          E 49 ST         10017   </span></span>
+<span><span class="co">#&gt;  4 1D10146       1080443 1274      6       40           CENTRAL PARK S~ &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  5 1D10200       1085777 1074      24      651          TENTH AVENUE    &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  6 1D10301       1002075 181       16      179          FRANKLIN STREET 10013   </span></span>
+<span><span class="co">#&gt;  7 1D10302       1010518 606       4       121          WEST 10 STREET  10011   </span></span>
+<span><span class="co">#&gt;  8 1D10303       1085955 1329      1       915          3 AVENUE        10022   </span></span>
+<span><span class="co">#&gt;  9 1D10304       1044058 1430      5       220          E. 76 ST        10021   </span></span>
+<span><span class="co">#&gt; 10 1D10305       1087468 1951      4       133          MORNINGSIDE AV~ &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt; # i 35,032 more rows</span></span>
+<span><span class="co">#&gt; # i 18 more variables: borough &lt;fct&gt;, device_type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   lastper_insp_date &lt;date&gt;, approval_date &lt;date&gt;, manufacturer &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   travel_distance &lt;chr&gt;, speed_fpm &lt;dbl&gt;, capacity_lbs &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   car_buffer_type &lt;chr&gt;, governor_type &lt;chr&gt;, machine_type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   safety_type &lt;chr&gt;, mode_operation &lt;chr&gt;, floor_from &lt;chr&gt;, floor_to &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   latitude &lt;dbl&gt;, longitude &lt;dbl&gt;, elevators_per_building &lt;int&gt;</span></span></code></pre><p></p></div>
     </div>
     <div class="section level2">
     <h2 id="glimpse-">glimpse()<a class="anchor" aria-label="anchor" href="#glimpse-"></a></h2>

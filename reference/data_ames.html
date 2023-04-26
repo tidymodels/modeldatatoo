@@ -61,25 +61,25 @@
     <h2 id="tibble-print">tibble print<a class="anchor" aria-label="anchor" href="#tibble-print"></a></h2>
     <p></p><div class="sourceCode r"><pre><code><span><span class="fu"><a href="../reference/data_ames.html">data_ames</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 2,930 x 74</span></span>
-<span><span class="co">#&gt;    ms_sub~1 ms_zo~2 lot_f~3 lot_a~4 street alley lot_s~5 land_~6 utili~7 lot_c~8</span></span>
-<span><span class="co">#&gt;  * &lt;fct&gt;    &lt;fct&gt;     &lt;dbl&gt;   &lt;int&gt; &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt;   &lt;fct&gt;   &lt;fct&gt;   &lt;fct&gt;  </span></span>
-<span><span class="co">#&gt;  1 One_Sto~ Reside~     141   31770 Pave   No_A~ Slight~ Lvl     AllPub  Corner </span></span>
-<span><span class="co">#&gt;  2 One_Sto~ Reside~      80   11622 Pave   No_A~ Regular Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt;  3 One_Sto~ Reside~      81   14267 Pave   No_A~ Slight~ Lvl     AllPub  Corner </span></span>
-<span><span class="co">#&gt;  4 One_Sto~ Reside~      93   11160 Pave   No_A~ Regular Lvl     AllPub  Corner </span></span>
-<span><span class="co">#&gt;  5 Two_Sto~ Reside~      74   13830 Pave   No_A~ Slight~ Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt;  6 Two_Sto~ Reside~      78    9978 Pave   No_A~ Slight~ Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt;  7 One_Sto~ Reside~      41    4920 Pave   No_A~ Regular Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt;  8 One_Sto~ Reside~      43    5005 Pave   No_A~ Slight~ HLS     AllPub  Inside </span></span>
-<span><span class="co">#&gt;  9 One_Sto~ Reside~      39    5389 Pave   No_A~ Slight~ Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt; 10 Two_Sto~ Reside~      60    7500 Pave   No_A~ Regular Lvl     AllPub  Inside </span></span>
-<span><span class="co">#&gt; # ... with 2,920 more rows, 64 more variables: land_slope &lt;fct&gt;,</span></span>
-<span><span class="co">#&gt; #   neighborhood &lt;fct&gt;, condition_1 &lt;fct&gt;, condition_2 &lt;fct&gt;, bldg_type &lt;fct&gt;,</span></span>
-<span><span class="co">#&gt; #   house_style &lt;fct&gt;, overall_cond &lt;fct&gt;, year_built &lt;int&gt;,</span></span>
+<span><span class="co">#&gt;    ms_sub_class           ms_zoning lot_frontage lot_area street alley lot_shape</span></span>
+<span><span class="co">#&gt;  * &lt;fct&gt;                  &lt;fct&gt;            &lt;dbl&gt;    &lt;int&gt; &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt;    </span></span>
+<span><span class="co">#&gt;  1 One_Story_1946_and_Ne~ Resident~          141    31770 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt;  2 One_Story_1946_and_Ne~ Resident~           80    11622 Pave   No_A~ Regular  </span></span>
+<span><span class="co">#&gt;  3 One_Story_1946_and_Ne~ Resident~           81    14267 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt;  4 One_Story_1946_and_Ne~ Resident~           93    11160 Pave   No_A~ Regular  </span></span>
+<span><span class="co">#&gt;  5 Two_Story_1946_and_Ne~ Resident~           74    13830 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt;  6 Two_Story_1946_and_Ne~ Resident~           78     9978 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt;  7 One_Story_PUD_1946_an~ Resident~           41     4920 Pave   No_A~ Regular  </span></span>
+<span><span class="co">#&gt;  8 One_Story_PUD_1946_an~ Resident~           43     5005 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt;  9 One_Story_PUD_1946_an~ Resident~           39     5389 Pave   No_A~ Slightly~</span></span>
+<span><span class="co">#&gt; 10 Two_Story_1946_and_Ne~ Resident~           60     7500 Pave   No_A~ Regular  </span></span>
+<span><span class="co">#&gt; # i 2,920 more rows</span></span>
+<span><span class="co">#&gt; # i 67 more variables: land_contour &lt;fct&gt;, utilities &lt;fct&gt;, lot_config &lt;fct&gt;,</span></span>
+<span><span class="co">#&gt; #   land_slope &lt;fct&gt;, neighborhood &lt;fct&gt;, condition_1 &lt;fct&gt;, condition_2 &lt;fct&gt;,</span></span>
+<span><span class="co">#&gt; #   bldg_type &lt;fct&gt;, house_style &lt;fct&gt;, overall_cond &lt;fct&gt;, year_built &lt;int&gt;,</span></span>
 <span><span class="co">#&gt; #   year_remod_add &lt;int&gt;, roof_style &lt;fct&gt;, roof_matl &lt;fct&gt;,</span></span>
 <span><span class="co">#&gt; #   exterior_1st &lt;fct&gt;, exterior_2nd &lt;fct&gt;, mas_vnr_type &lt;fct&gt;,</span></span>
-<span><span class="co">#&gt; #   mas_vnr_area &lt;dbl&gt;, exter_cond &lt;fct&gt;, foundation &lt;fct&gt;, bsmt_cond &lt;fct&gt;,</span></span>
-<span><span class="co">#&gt; #   bsmt_exposure &lt;fct&gt;, bsmt_fin_type_1 &lt;fct&gt;, bsmt_fin_sf_1 &lt;dbl&gt;, ...</span></span></code></pre><p></p></div>
+<span><span class="co">#&gt; #   mas_vnr_area &lt;dbl&gt;, exter_cond &lt;fct&gt;, foundation &lt;fct&gt;, ...</span></span></code></pre><p></p></div>
     </div>
     <div class="section level2">
     <h2 id="glimpse-">glimpse()<a class="anchor" aria-label="anchor" href="#glimpse-"></a></h2>

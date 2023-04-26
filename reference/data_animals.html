@@ -61,25 +61,25 @@
     <h2 id="tibble-print">tibble print<a class="anchor" aria-label="anchor" href="#tibble-print"></a></h2>
     <p></p><div class="sourceCode r"><pre><code><span><span class="fu"><a href="../reference/data_animals.html">data_animals</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 610 x 48</span></span>
-<span><span class="co">#&gt;    text   colour lifes~1 weight kingdom class phylum diet  conse~2 order scien~3</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;  </span></span>
-<span><span class="co">#&gt;  1 "Aard~ Brown~ 23 yea~ 60kg ~ Animal~ Mamm~ Chord~ Omni~ Least ~ Tubu~ Orycte~</span></span>
-<span><span class="co">#&gt;  2 "Abys~ Fawn,~ &lt;NA&gt;    &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   </span></span>
-<span><span class="co">#&gt;  3 "Adel~ Black~ 10 - 2~ 3kg -~ Animal~ Aves  Chord~ Carn~ Least ~ Sphe~ Pygosc~</span></span>
-<span><span class="co">#&gt;  4 "Affe~ Black~ &lt;NA&gt;    &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   </span></span>
-<span><span class="co">#&gt;  5 "Afgh~ Black~ &lt;NA&gt;    &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   </span></span>
-<span><span class="co">#&gt;  6 "Afri~ Grey,~ 60 - 7~ 3,600~ Animal~ Mamm~ Chord~ Herb~ Threat~ Prob~ Loxodo~</span></span>
-<span><span class="co">#&gt;  7 "Afri~ Black~ 15 - 2~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least ~ Carn~ Civett~</span></span>
-<span><span class="co">#&gt;  8 "Afri~ Brown~ 8 - 15~ 25g -~ Animal~ Amph~ Chord~ Carn~ Least ~ Anura Xenopu~</span></span>
-<span><span class="co">#&gt;  9 "Afri~ Grey,~ 60 - 7~ 900kg~ Animal~ Mamm~ Chord~ Herb~ Endang~ Prob~ Loxodo~</span></span>
-<span><span class="co">#&gt; 10 "Afri~ Black~ 15 - 2~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least ~ Carn~ Nandin~</span></span>
-<span><span class="co">#&gt; # ... with 600 more rows, 37 more variables: skin_type &lt;chr&gt;, habitat &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   predators &lt;chr&gt;, family &lt;chr&gt;, lifestyle &lt;chr&gt;, average_litter_size &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   genus &lt;chr&gt;, top_speed &lt;chr&gt;, favourite_food &lt;chr&gt;, main_prey &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   type &lt;chr&gt;, common_name &lt;chr&gt;, group &lt;chr&gt;, size &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   distinctive_features &lt;chr&gt;, size_l &lt;chr&gt;, origin &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   special_features &lt;chr&gt;, location &lt;chr&gt;, number_of_species &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   average_clutch_size &lt;chr&gt;, size_h &lt;chr&gt;, group_behaviour &lt;chr&gt;, ...</span></span></code></pre><p></p></div>
+<span><span class="co">#&gt;    text    colour lifespan weight kingdom class phylum diet  conservation_status</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;              </span></span>
+<span><span class="co">#&gt;  1 "Aardv~ Brown~ 23 years 60kg ~ Animal~ Mamm~ Chord~ Omni~ Least Concern      </span></span>
+<span><span class="co">#&gt;  2 "Abyss~ Fawn,~ &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;               </span></span>
+<span><span class="co">#&gt;  3 "Adeli~ Black~ 10 - 20~ 3kg -~ Animal~ Aves  Chord~ Carn~ Least Concern      </span></span>
+<span><span class="co">#&gt;  4 "Affen~ Black~ &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;               </span></span>
+<span><span class="co">#&gt;  5 "Afgha~ Black~ &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;               </span></span>
+<span><span class="co">#&gt;  6 "Afric~ Grey,~ 60 - 70~ 3,600~ Animal~ Mamm~ Chord~ Herb~ Threatened         </span></span>
+<span><span class="co">#&gt;  7 "Afric~ Black~ 15 - 20~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least Concern      </span></span>
+<span><span class="co">#&gt;  8 "Afric~ Brown~ 8 - 15 ~ 25g -~ Animal~ Amph~ Chord~ Carn~ Least Concern      </span></span>
+<span><span class="co">#&gt;  9 "Afric~ Grey,~ 60 - 70~ 900kg~ Animal~ Mamm~ Chord~ Herb~ Endangered         </span></span>
+<span><span class="co">#&gt; 10 "Afric~ Black~ 15 - 20~ 1.4kg~ Animal~ Mamm~ Chord~ Omni~ Least Concern      </span></span>
+<span><span class="co">#&gt; # i 600 more rows</span></span>
+<span><span class="co">#&gt; # i 39 more variables: order &lt;chr&gt;, scientific_name &lt;chr&gt;, skin_type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   habitat &lt;chr&gt;, predators &lt;chr&gt;, family &lt;chr&gt;, lifestyle &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   average_litter_size &lt;chr&gt;, genus &lt;chr&gt;, top_speed &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   favourite_food &lt;chr&gt;, main_prey &lt;chr&gt;, type &lt;chr&gt;, common_name &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   group &lt;chr&gt;, size &lt;chr&gt;, distinctive_features &lt;chr&gt;, size_l &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   origin &lt;chr&gt;, special_features &lt;chr&gt;, location &lt;chr&gt;, ...</span></span></code></pre><p></p></div>
     </div>
     <div class="section level2">
     <h2 id="glimpse-">glimpse()<a class="anchor" aria-label="anchor" href="#glimpse-"></a></h2>
