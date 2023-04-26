@@ -1,0 +1,26 @@
+#' NAME_OF_DATA_SET data set
+#'
+#' @return tibble
+#'
+#' @details
+#'
+#' # tibble print
+#'
+#' ```{r}
+#' data_NAME_OF_DATA_SET()
+#' ```
+#'
+#' # glimpse()
+#'
+#' ```{r}
+#' tibble::glimpse(data_NAME_OF_DATA_SET())
+#' ```
+#'
+#' @examples
+#' \dontrun{
+#' data_NAME_OF_DATA_SET()
+#' }
+#' @export
+data_NAME_OF_DATA_SET <- function() {
+  pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET")
+}
