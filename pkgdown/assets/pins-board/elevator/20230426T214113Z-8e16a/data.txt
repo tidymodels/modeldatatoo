@@ -1,9 +1,0 @@
-file: elevator.rds
-file_size: 1138847
-pin_hash: 8e16aaf7c467ccb1
-type: rds
-title: 'elevator: a pinned 35042 x 25 data frame'
-description: ~
-tags: ~
-created: 20230426T214113Z
-api_version: 1.0
