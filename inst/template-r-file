@@ -1,9 +1,13 @@
 #' NAME_OF_DATA_SET data set
 #'
+#' @description
+#' A short description...
+#'
 #' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
 #'
 #' @details
+#' Additional details...
 #'
 #' # tibble print
 #'
@@ -16,6 +20,9 @@
 #' ```{r}
 #' tibble::glimpse(data_NAME_OF_DATA_SET())
 #' ```
+#'
+#' @source
+#' Information about where the data comes from...
 #'
 #' @examples
 #' \dontrun{
