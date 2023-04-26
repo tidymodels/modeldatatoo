@@ -3,6 +3,9 @@
 \name{data_animals}
 \alias{data_animals}
 \title{animals data set}
+\source{
+\url{https://github.com/emilhvitfeldt/animals}
+}
 \usage{
 data_animals(...)
 }
@@ -13,7 +16,11 @@ data_animals(...)
 tibble
 }
 \description{
-animals data set
+Data set with characteristics of many animals, including the field \code{text}
+which is a long-form description of the animal.
+}
+\details{
+This data set contains quite a bit of missing data and malformed fiels.
 }
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_animals()

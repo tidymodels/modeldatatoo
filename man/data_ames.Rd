@@ -3,6 +3,15 @@
 \name{data_ames}
 \alias{data_ames}
 \title{Ames data set}
+\source{
+De Cock, D. (2011). "Ames, Iowa: Alternative to the Boston Housing Data as an
+End of Semester Regression Project," \emph{Journal of Statistics Education},
+Volume 19, Number 3.
+
+\url{http://jse.amstat.org/v19n3/decock/DataDocumentation.txt}
+
+\url{http://jse.amstat.org/v19n3/decock.pdf}
+}
 \usage{
 data_ames(...)
 }
@@ -13,7 +22,17 @@ data_ames(...)
 tibble
 }
 \description{
-Ames data set
+#' A data set from De Cock (2011) has 82 fields were recorded for 2,930
+properties in Ames IA. This version is copies from the \code{AmesHousing} package
+but does not include a few quality columns that appear to be outcomes
+rather than predictors.
+
+See this links for the sources below for more information as well as
+\code{?AmesHousing::make_ames}.
+}
+\details{
+The full data dictionary can be found here
+\url{https://jse.amstat.org/v19n3/decock/DataDocumentation.txt}.
 }
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_ames()
