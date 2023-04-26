@@ -49,56 +49,15 @@
 </div>
 <div class="section level1">
 <h1 id="adding-a-new-data-set">Adding a new data set.<a class="anchor" aria-label="anchor" href="#adding-a-new-data-set"></a></h1>
-<ol style="list-style-type: decimal"><li><p>Run <code>usethis::use_data_raw("name_of_data_set")</code></p></li>
-<li><p>In the newly created file, write the code to produce desired data set.</p></li>
-<li>
-<p>The include the following code to have the data set saved as a pin. Remember to change <code>name_of_data_set</code> to match the name of your data set.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pins.rstudio.com/" class="external-link">pins</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">board</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://pins.rstudio.com/reference/board_folder.html" class="external-link">board_folder</a></span><span class="op">(</span><span class="st">"data-raw/"</span>, versioned <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">board</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://pins.rstudio.com/reference/pin_read.html" class="external-link">pin_write</a></span><span class="op">(</span><span class="va">name_of_data_set</span>, <span class="st">"name_of_data_set"</span>, type <span class="op">=</span> <span class="st">"rds"</span><span class="op">)</span></span></code></pre></div>
-</li>
-<li><p>Push changes to Main.</p></li>
-<li><p>Update <code>modeldatatoo_board</code> in <a href="R/aaa-board.R">R/aaa-board.R</a> to include new data set.</p></li>
-<li><p>Run <code>usethis::use_r("name_of_data_set")</code></p></li>
-<li>
-<p>Populate with the following code. Changing <code>name_of_data_set</code> to reflect the name you used earlier.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#' name_of_data_set data set</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' @return tibble</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' @details</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' # tibble print</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' ```{r}</span></span>
-<span><span class="co">#' data_name_of_data_set()</span></span>
-<span><span class="co">#' ```</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' # glimpse()</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' ```{r}</span></span>
-<span><span class="co">#' tibble::glimpse(data_name_of_data_set())</span></span>
-<span><span class="co">#' ```</span></span>
-<span><span class="co">#'</span></span>
-<span><span class="co">#' @examples</span></span>
-<span><span class="co">#' \dontrun{</span></span>
-<span><span class="co">#' data_name_of_data_set()</span></span>
-<span><span class="co">#' }</span></span>
-<span><span class="co">#' @export</span></span>
-<span><span class="va">data_name_of_data_set</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="op">)</span> <span class="op">{</span></span>
-<span>  <span class="fu">pins</span><span class="fu">::</span><span class="fu"><a href="https://pins.rstudio.com/reference/pin_read.html" class="external-link">pin_read</a></span><span class="op">(</span><span class="va">modeldatatoo_board</span>, <span class="st">"name_of_data_set"</span><span class="op">)</span></span>
-<span><span class="op">}</span></span></code></pre></div>
-</li>
-<li><p>Add more information under @details and @source.</p></li>
-<li><p>Run <code>devtools::document()</code></p></li>
-<li><p>Update <a href="NEWS.html">NEWS.md</a></p></li>
-<li><p>Add data set to <a href="_pkgdown.yml">_pkgdown.yml</a></p></li>
-<li><p>You are done!</p></li>
+<ol style="list-style-type: decimal"><li>Run <code>modeldatatoo:::.add_new_data("name_of_data_set")</code>.</li>
+<li>In the newly created file under <code>data-raw</code>, write the code to produce desired data set, then source the file.</li>
+<li>Push all changes except <code>R/name_of_data_set.R</code> to Main.</li>
+<li>Modify <code>R/name_of_data_set.R</code>.</li>
+<li>Run <code>devtools::document()</code>. (you will have to wait for pkgdown CI to do this step)</li>
+<li>Update <a href="NEWS.html">NEWS.md</a>.</li>
+<li>Add data set to <a href="_pkgdown.yml">_pkgdown.yml</a>.</li>
+<li>Push everything to Main.</li>
+<li>You are done!</li>
 </ol></div>
 
 
