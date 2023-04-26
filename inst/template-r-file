@@ -1,5 +1,6 @@
 #' NAME_OF_DATA_SET data set
 #'
+#' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
 #'
 #' @details

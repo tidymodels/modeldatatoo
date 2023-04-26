@@ -1,5 +1,6 @@
 #' elevators data set
 #'
+#' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
 #'
 #' @details
@@ -21,6 +22,6 @@
 #' data_elevators()
 #' }
 #' @export
-data_elevators <- function() {
-  pins::pin_read(modeldatatoo_board, "elevators")
+data_elevators <- function(...) {
+  pins::pin_read(modeldatatoo_board, "elevators", ...)
 }

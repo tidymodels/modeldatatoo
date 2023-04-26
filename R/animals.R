@@ -1,5 +1,6 @@
 #' animals data set
 #'
+#' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
 #'
 #' @details
@@ -21,6 +22,6 @@
 #' data_animals()
 #' }
 #' @export
-data_animals <- function() {
-  pins::pin_read(modeldatatoo_board, "animals")
+data_animals <- function(...) {
+  pins::pin_read(modeldatatoo_board, "animals", ...)
 }

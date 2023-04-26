@@ -4,7 +4,10 @@
 \alias{data_elevators}
 \title{elevators data set}
 \usage{
-data_elevators()
+data_elevators(...)
+}
+\arguments{
+\item{...}{Arguments passed to \code{\link[pins:pin_read]{pins::pin_read()}}.}
 }
 \value{
 tibble

@@ -4,7 +4,10 @@
 \alias{data_animals}
 \title{animals data set}
 \usage{
-data_animals()
+data_animals(...)
+}
+\arguments{
+\item{...}{Arguments passed to \code{\link[pins:pin_read]{pins::pin_read()}}.}
 }
 \value{
 tibble

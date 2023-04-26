@@ -1,5 +1,6 @@
 #' Ames data set
 #'
+#' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
 #'
 #' @details
@@ -21,6 +22,6 @@
 #' data_ames()
 #' }
 #' @export
-data_ames <- function() {
-  pins::pin_read(modeldatatoo_board, "ames")
+data_ames <- function(...) {
+  pins::pin_read(modeldatatoo_board, "ames", ...)
 }
