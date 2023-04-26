@@ -9,8 +9,8 @@ ames <- ames |>
   clean_names()
 
 library(pins)
+library(here)
 
-board <- board_folder("data-raw/", versioned = FALSE)
-
-board |>
-  pin_write(ames, "ames", type = "rds")
+board <- board_folder(here("pkgdown/assets/pins-board"), versioned = FALSE)
+board |> pin_write(ames, "ames", type = "rds")
+board |> write_board_manifest()
