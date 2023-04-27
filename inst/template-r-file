@@ -29,6 +29,6 @@
 #' data_NAME_OF_DATA_SET()
 #' }
 #' @export
-data_NAME_OF_DATA_SET <- function() {
-  pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET")
+data_NAME_OF_DATA_SET <- function(...) {
+  pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET", ...)
 }

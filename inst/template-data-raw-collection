@@ -1,0 +1,11 @@
+## code to prepare `NAME_OF_DATA_SET` dataset goes here
+
+# Should be a named list
+NAME_OF_DATA_SET <- ...
+
+library(pins)
+library(here)
+
+board <- board_folder(here("pkgdown/assets/pins-board"), versioned = FALSE)
+board |> pin_write(NAME_OF_DATA_SET, "NAME_OF_DATA_SET", type = "rds")
+board |> write_board_manifest()
