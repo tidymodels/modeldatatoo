@@ -1,7 +1,8 @@
 ## code to prepare `NAME_OF_DATA_SET` dataset goes here
 
-# Should be a named list
-NAME_OF_DATA_SET <- ...
+NAME_OF_DATA_SET <- list(
+LIST_PRINTS
+)
 
 library(pins)
 library(here)
