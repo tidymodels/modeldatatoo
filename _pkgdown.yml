@@ -16,6 +16,7 @@ reference:
     - data_ames
     - data_animals
     - data_elevators
+    - load_small_fine_foods
   - title: Helper Functions
     contents:
     - internal_board
