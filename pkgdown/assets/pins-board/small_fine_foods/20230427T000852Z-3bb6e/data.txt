@@ -1,0 +1,9 @@
+file: small_fine_foods.rds
+file_size: 832141
+pin_hash: 3bb6e1342ecfed36
+type: rds
+title: 'small_fine_foods: a pinned list'
+description: ~
+tags: ~
+created: 20230427T000852Z
+api_version: 1.0
