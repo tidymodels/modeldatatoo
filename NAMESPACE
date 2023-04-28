@@ -3,5 +3,6 @@
 export(attach_small_fine_foods)
 export(data_ames)
 export(data_animals)
+export(data_chimiometrie_2019)
 export(data_elevators)
 export(internal_board)
