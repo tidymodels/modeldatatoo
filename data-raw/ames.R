@@ -5,8 +5,7 @@ library(janitor)
 
 data("ames", package = "modeldata")
 
-ames <- ames |>
-  clean_names()
+ames <- clean_names(ames)
 
 library(pins)
 library(here)

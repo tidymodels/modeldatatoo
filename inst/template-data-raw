@@ -2,6 +2,9 @@
 
 NAME_OF_DATA_SET <- ...
 
+library(janitor)
+NAME_OF_DATA_SET <- clean_names(NAME_OF_DATA_SET)
+
 library(pins)
 library(here)
 

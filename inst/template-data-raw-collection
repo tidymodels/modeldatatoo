@@ -4,6 +4,9 @@ NAME_OF_DATA_SET <- list(
 LIST_PRINTS
 )
 
+library(janitor)
+NAME_OF_DATA_SET <- lapply(NAME_OF_DATA_SET, clean_names)
+
 library(pins)
 library(here)
 
