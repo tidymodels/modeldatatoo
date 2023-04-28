@@ -33,10 +33,10 @@ GLIMPSE_PRINTS
 #'
 #' @examples
 #' \dontrun{
-#' load_NAME_OF_DATA_SET()
+#' attach_NAME_OF_DATA_SET()
 #' }
 #' @export
-load_NAME_OF_DATA_SET <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
+attach_NAME_OF_DATA_SET <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
   data <- pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET", ...)
 
   data_names <- names(data)

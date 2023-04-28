@@ -54,7 +54,7 @@ setup_file <- function(file, name, template) {
   TIBBLE_PRINTS_index <- which(lines == "TIBBLE_PRINTS")
 
   TIBBLE_PRINTS_insert <- c(
-    paste0("#' load_", name ,"()"),
+    paste0("#' attach_", name ,"()"),
     "#'",
     paste0("#' ", data_sets)
   )

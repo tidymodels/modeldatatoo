@@ -2,7 +2,7 @@
 % Please edit documentation in R/small_fine_foods.R
 \name{small_fine_foods}
 \alias{small_fine_foods}
-\alias{load_small_fine_foods}
+\alias{attach_small_fine_foods}
 \alias{training_data}
 \alias{testing_data}
 \title{small_fine_foods data sets}
@@ -10,7 +10,7 @@
 \url{https://snap.stanford.edu/data/web-FineFoods.html}
 }
 \usage{
-load_small_fine_foods(envir = .GlobalEnv, quiet = FALSE, ...)
+attach_small_fine_foods(envir = .GlobalEnv, quiet = FALSE, ...)
 }
 \arguments{
 \item{envir}{Environment to load data sets into. Defaults to \code{.GlobalEnv}.}
@@ -43,7 +43,7 @@ a factor column for a class variable. The outcome is whether the reviewer
 gave the product a 5-star rating or not.
 }
 \section{tibble print}{
-\if{html}{\out{<div class="sourceCode r">}}\preformatted{load_small_fine_foods()
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{attach_small_fine_foods()
 #> The following data sets have been loaded:
 #> `training_data`, `testing_data`
 #> Silence this message by setting `quiet = TRUE`.
@@ -99,6 +99,6 @@ tibble::glimpse(testing_data)
 
 \examples{
 \dontrun{
-load_small_fine_foods()
+attach_small_fine_foods()
 }
 }

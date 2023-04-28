@@ -29,7 +29,7 @@
 #' # tibble print
 #'
 #' ```{r}
-#' load_small_fine_foods()
+#' attach_small_fine_foods()
 #'
 #' training_data
 #' testing_data
@@ -51,10 +51,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' load_small_fine_foods()
+#' attach_small_fine_foods()
 #' }
 #' @export
-load_small_fine_foods <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
+attach_small_fine_foods <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
   data <- pins::pin_read(modeldatatoo_board, "small_fine_foods", ...)
 
   data_names <- names(data)
