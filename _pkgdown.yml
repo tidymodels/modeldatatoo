@@ -16,6 +16,7 @@ reference:
     - data_ames
     - data_animals
     - data_elevators
+    - data_net_data
     - attach_small_fine_foods
   - title: Helper Functions
     contents:
