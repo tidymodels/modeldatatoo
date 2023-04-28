@@ -24,6 +24,12 @@
 #'
 #' @details
 #'
+#' # glimpse()
+#'
+#' ```{r}
+#' tibble::glimpse(data_chimiometrie_2019()[, 1:10])
+#' ```
+#'
 #' ## License
 #'
 #' No license was given for the data.

@@ -35,12 +35,27 @@ Pierna (2020) suggest that the wavelengths range from 1300 2nm to 2398 2nm.
 
 The three outcome columns are \code{"soy_oil"}, \code{"lucerne"}, and \code{"barley"}.
 }
-\details{
+\section{glimpse()}{
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{tibble::glimpse(data_chimiometrie_2019()[, 1:10])
+#> Rows: 6,915
+#> Columns: 10
+#> $ soy_oil    <dbl> 2.1, 2.1, 2.1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,~
+#> $ lucerne    <dbl> 23.5712, 23.5712, 23.5712, 25.0000, 25.0000, 25.0000, 25.00~
+#> $ barley     <dbl> 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,~
+#> $ wvlgth_001 <dbl> 0.2076995, 0.2064382, 0.2070081, 0.2057694, 0.2005429, 0.20~
+#> $ wvlgth_002 <dbl> 0.2074427, 0.2062003, 0.2067785, 0.2055505, 0.2003232, 0.20~
+#> $ wvlgth_003 <dbl> 0.2072212, 0.2059973, 0.2065901, 0.2053678, 0.2001469, 0.20~
+#> $ wvlgth_004 <dbl> 0.2070317, 0.2058266, 0.2064396, 0.2052174, 0.2000069, 0.20~
+#> $ wvlgth_005 <dbl> 0.2068830, 0.2056964, 0.2063288, 0.2051110, 0.1999092, 0.20~
+#> $ wvlgth_006 <dbl> 0.2067773, 0.2056115, 0.2062618, 0.2050571, 0.1998616, 0.20~
+#> $ wvlgth_007 <dbl> 0.2067083, 0.2055686, 0.2062386, 0.2050495, 0.1998592, 0.20~
+}\if{html}{\out{</div>}}
 \subsection{License}{
 
 No license was given for the data.
 }
 }
+
 \examples{
 \dontrun{
 data_chimiometrie_2019()
