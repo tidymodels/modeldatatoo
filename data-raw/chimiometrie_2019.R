@@ -1,6 +1,7 @@
 ## code to prepare `chimiometrie_2019` dataset goes here
 
-chimiometrie_2019 <- ...
+# https://www.dropbox.com/s/cinfrxsj2l6ljr0/chimiometrie_2019.RData?dl=0
+load("~/Downloads/chimiometrie_2019.rdata")
 
 library(janitor)
 chimiometrie_2019 <- clean_names(chimiometrie_2019)
