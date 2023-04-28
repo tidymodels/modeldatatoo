@@ -39,7 +39,8 @@ chimiometrie_2019_spectra_val <-
 attr(chimiometrie_2019_spectra_val, "spec") <- NULL
 
 chimiometrie_2019_outcomes <-
-  read_delim("YCAL.CSV", delim = ";", col_names = FALSE) %>%
+  read_delim(file.path(new_dir, "YCAL.CSV"),
+             delim = ";", col_names = FALSE) %>%
   set_names(c("soy_oil", "lucerne", "barley"))
 attr(chimiometrie_2019_outcomes, "spec") <- NULL
 
