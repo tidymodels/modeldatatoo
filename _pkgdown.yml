@@ -15,6 +15,7 @@ reference:
     contents:
     - data_ames
     - data_animals
+    - data_chimiometrie_2019
     - data_elevators
     - attach_small_fine_foods
   - title: Helper Functions
