@@ -1,0 +1,9 @@
+file: chimiometrie_2019.rds
+file_size: 27066133
+pin_hash: e388a6372ffbe5c5
+type: rds
+title: 'chimiometrie_2019: a pinned 6915 x 553 data frame'
+description: ~
+tags: ~
+created: 20230428T165546Z
+api_version: 1.0
