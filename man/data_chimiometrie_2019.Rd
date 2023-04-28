@@ -44,8 +44,6 @@ No license was given for the data.
 \examples{
 \dontrun{
 data_chimiometrie_2019()
-
-tibble::glimpse(data_chimiometrie_2019())
 }
 }
 \references{

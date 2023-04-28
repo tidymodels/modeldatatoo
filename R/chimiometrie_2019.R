@@ -46,8 +46,6 @@
 #' @examples
 #' \dontrun{
 #' data_chimiometrie_2019()
-#'
-#' tibble::glimpse(data_chimiometrie_2019())
 #' }
 #' @export
 data_chimiometrie_2019 <- function(...) {
