@@ -1,0 +1,9 @@
+file: net_data.rds
+file_size: 22872
+pin_hash: d07841fbac1d7331
+type: rds
+title: 'net_data: a pinned 1752 x 10 data frame'
+description: ~
+tags: ~
+created: 20230428T165118Z
+api_version: 1.0
