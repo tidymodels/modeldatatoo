@@ -12,6 +12,8 @@ License: MIT + file LICENSE
 URL: https://github.com/tidymodels/modeldatatoo,
     https://tidymodels.github.io/modeldatatoo/
 BugReports: https://github.com/tidymodels/modeldatatoo/issues
+Depends: 
+    R (>= 3.6)
 Imports: 
     pins
 Suggests: 
