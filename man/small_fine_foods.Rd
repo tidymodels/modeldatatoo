@@ -10,10 +10,11 @@
 \url{https://snap.stanford.edu/data/web-FineFoods.html}
 }
 \usage{
-attach_small_fine_foods(envir = .GlobalEnv, quiet = FALSE, ...)
+attach_small_fine_foods(envir = parent.frame(), quiet = FALSE, ...)
 }
 \arguments{
-\item{envir}{Environment to load data sets into. Defaults to \code{.GlobalEnv}.}
+\item{envir}{Environment to load data sets into. Defaults to
+\code{parent.frame()}.}
 
 \item{quiet}{Logical, should function announce what data sets are loaded.}
 

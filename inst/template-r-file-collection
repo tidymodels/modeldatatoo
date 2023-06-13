@@ -3,7 +3,8 @@
 #' @description
 #' A short description...
 #'
-#' @param envir Environment to load data sets into. Defaults to `.GlobalEnv`.
+#' @param envir Environment to load data sets into. Defaults to
+#'   `parent.frame()`.
 #' @param quiet Logical, should function announce what data sets are loaded.
 #' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
@@ -36,7 +37,9 @@ GLIMPSE_PRINTS
 #' attach_NAME_OF_DATA_SET()
 #' }
 #' @export
-attach_NAME_OF_DATA_SET <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
+attach_NAME_OF_DATA_SET <- function(envir = parent.frame(),
+                                    quiet = FALSE,
+                                    ...) {
   data <- pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET", ...)
 
   data_names <- names(data)

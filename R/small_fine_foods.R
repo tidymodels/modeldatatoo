@@ -3,7 +3,8 @@
 #' @description
 #' Training and testing data set of fine food reviews.
 #'
-#' @param envir Environment to load data sets into. Defaults to `.GlobalEnv`.
+#' @param envir Environment to load data sets into. Defaults to
+#'   `parent.frame()`.
 #' @param quiet Logical, should function announce what data sets are loaded.
 #' @param ... Arguments passed to [pins::pin_read()].
 #' @return tibble
@@ -54,7 +55,9 @@
 #' attach_small_fine_foods()
 #' }
 #' @export
-attach_small_fine_foods <- function(envir = .GlobalEnv, quiet = FALSE, ...) {
+attach_small_fine_foods <- function(envir = parent.frame(),
+                                    quiet = FALSE,
+                                    ...) {
   data <- pins::pin_read(modeldatatoo_board, "small_fine_foods", ...)
 
   data_names <- names(data)
