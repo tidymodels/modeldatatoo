@@ -117,7 +117,7 @@ its rated speed}
 }
 
 \examples{
-\dontrun{
+\donttest{
 data_elevators()
 }
 }

@@ -1,6 +1,6 @@
 ## Comment
 
-All user-facing functions require internet access, and examples are thus placed in `\dontrun{}`.
+All user-facing functions require internet access, and examples are thus placed in `\donttest{}`.
 
 ## R CMD check results
 

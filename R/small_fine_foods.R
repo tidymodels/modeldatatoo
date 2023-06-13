@@ -50,7 +50,7 @@
 #' \url{https://snap.stanford.edu/data/web-FineFoods.html}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' attach_small_fine_foods()
 #' }
 #' @export

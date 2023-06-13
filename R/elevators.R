@@ -66,7 +66,7 @@
 #' \url{https://github.com/datanews/elevators}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' data_elevators()
 #' }
 #' @export

@@ -32,7 +32,7 @@ GLIMPSE_PRINTS
 #' Information about where the data comes from...
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' attach_NAME_OF_DATA_SET()
 #' }
 #' @export

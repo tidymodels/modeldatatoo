@@ -98,7 +98,7 @@ tibble::glimpse(testing_data)
 }
 
 \examples{
-\dontrun{
+\donttest{
 attach_small_fine_foods()
 }
 }
