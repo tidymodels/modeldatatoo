@@ -10,8 +10,8 @@
 <title>More Data Sets Useful for Modeling Examples • modeldatatoo</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="deps/Source_Sans_Pro-0.4.5/font.css" rel="stylesheet">
-<link href="deps/Source_Code_Pro-0.4.5/font.css" rel="stylesheet">
+<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="deps/Source_Sans_Pro-0.4.6/font.css" rel="stylesheet">
+<link href="deps/Source_Code_Pro-0.4.6/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="More Data Sets Useful for Modeling Examples">
@@ -30,7 +30,7 @@
     
     <a class="navbar-brand me-2" href="index.html">modeldatatoo</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,9 @@
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
@@ -70,8 +73,11 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of modeldatatoo from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install the released version of modeldatatoo from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"modeldatatoo"</span><span class="op">)</span></span></code></pre></div>
+<p>You can install the development version of modeldatatoo from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="http://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"tidymodels/modeldatatoo"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -79,34 +85,36 @@
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <p>All the data sets in this package can be accessed by functions which are prefixed with <code>data_</code>, and you call them like functions</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/data_elevators.html">data_elevators</a></span><span class="op">(</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/tidymodels/modeldatatoo" class="external-link">modeldatatoo</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/data_elevators.html">data_elevators</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 35,042 × 25</span></span>
-<span><span class="co">#&gt;    device_number bin     tax_b…¹ tax_lot house…² stree…³ zip_c…⁴ borough devic…⁵</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;fct&gt;   &lt;chr&gt;  </span></span>
-<span><span class="co">#&gt;  1 1D10028       1024795 1021    26      1614    BROADW… 10019   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  2 1D10094       1041822 1392    25      53      E 77TH… 10021   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  3 1D10097       1038223 1323    1       201     E 49 ST 10017   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  4 1D10146       1080443 1274    6       40      CENTRA… &lt;NA&gt;    Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  5 1D10200       1085777 1074    24      651     TENTH … &lt;NA&gt;    Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  6 1D10301       1002075 181     16      179     FRANKL… 10013   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  7 1D10302       1010518 606     4       121     WEST 1… 10011   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  8 1D10303       1085955 1329    1       915     3 AVEN… 10022   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt;  9 1D10304       1044058 1430    5       220     E. 76 … 10021   Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt; 10 1D10305       1087468 1951    4       133     MORNIN… &lt;NA&gt;    Manhat… Dumbwa…</span></span>
-<span><span class="co">#&gt; # … with 35,032 more rows, 16 more variables: lastper_insp_date &lt;date&gt;,</span></span>
-<span><span class="co">#&gt; #   approval_date &lt;date&gt;, manufacturer &lt;chr&gt;, travel_distance &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   speed_fpm &lt;dbl&gt;, capacity_lbs &lt;dbl&gt;, car_buffer_type &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   governor_type &lt;chr&gt;, machine_type &lt;chr&gt;, safety_type &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   mode_operation &lt;chr&gt;, floor_from &lt;chr&gt;, floor_to &lt;chr&gt;, latitude &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   longitude &lt;dbl&gt;, elevators_per_building &lt;int&gt;, and abbreviated variable</span></span>
-<span><span class="co">#&gt; #   names ¹​tax_block, ²​house_number, ³​street_name, ⁴​zip_code, ⁵​device_type</span></span></code></pre></div>
+<span><span class="co">#&gt;    device_number bin     tax_block tax_lot house_number street_name     zip_code</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;           &lt;chr&gt;   </span></span>
+<span><span class="co">#&gt;  1 1D10028       1024795 1021      26      1614         BROADWAY        10019   </span></span>
+<span><span class="co">#&gt;  2 1D10094       1041822 1392      25      53           E 77TH ST       10021   </span></span>
+<span><span class="co">#&gt;  3 1D10097       1038223 1323      1       201          E 49 ST         10017   </span></span>
+<span><span class="co">#&gt;  4 1D10146       1080443 1274      6       40           CENTRAL PARK S… &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  5 1D10200       1085777 1074      24      651          TENTH AVENUE    &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  6 1D10301       1002075 181       16      179          FRANKLIN STREET 10013   </span></span>
+<span><span class="co">#&gt;  7 1D10302       1010518 606       4       121          WEST 10 STREET  10011   </span></span>
+<span><span class="co">#&gt;  8 1D10303       1085955 1329      1       915          3 AVENUE        10022   </span></span>
+<span><span class="co">#&gt;  9 1D10304       1044058 1430      5       220          E. 76 ST        10021   </span></span>
+<span><span class="co">#&gt; 10 1D10305       1087468 1951      4       133          MORNINGSIDE AV… &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt; # ℹ 35,032 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 18 more variables: borough &lt;fct&gt;, device_type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   lastper_insp_date &lt;date&gt;, approval_date &lt;date&gt;, manufacturer &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   travel_distance &lt;chr&gt;, speed_fpm &lt;dbl&gt;, capacity_lbs &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   car_buffer_type &lt;chr&gt;, governor_type &lt;chr&gt;, machine_type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   safety_type &lt;chr&gt;, mode_operation &lt;chr&gt;, floor_from &lt;chr&gt;, floor_to &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   latitude &lt;dbl&gt;, longitude &lt;dbl&gt;, elevators_per_building &lt;int&gt;</span></span></code></pre></div>
 <p>The <a href="https://pins.rstudio.com/" class="external-link">pins</a> package is used under the hood to read, download, and cache the data.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=modeldatatoo" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/tidymodels/modeldatatoo/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/tidymodels/modeldatatoo/issues" class="external-link">Report a bug</a></li>
 </ul>
@@ -143,13 +151,7 @@
 </ul>
 </div>
 
-<div class="dev-status">
-<h2 data-toc-skip>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://app.codecov.io/gh/tidymodels/modeldatatoo?branch=main" class="external-link"><img src="https://codecov.io/gh/tidymodels/modeldatatoo/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
-</ul>
-</div>
+
 
   </aside>
 </div>
