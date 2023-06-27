@@ -11,6 +11,7 @@ taxi_raw <- read_csv("~/Downloads/Taxi_Trips_-_2022.csv") |>
 set.seed(1234)
 
 taxi_med <- taxi_raw |>
+  filter(!is.na(tips), payment_type != "Cash") |>
   slice_sample(n = 10000) |>
   mutate(
     tip = if_else(tips > 0, "yes", "no") |> factor(levels = c("yes", "no")),
