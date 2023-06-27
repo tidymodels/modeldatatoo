@@ -29,7 +29,7 @@
 #' \url{https://github.com/emilhvitfeldt/animals}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' data_animals()
 #' }
 #' @export

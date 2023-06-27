@@ -103,7 +103,7 @@ This data set contains quite a bit of missing data and malformed fiels.
 }
 
 \examples{
-\dontrun{
+\donttest{
 data_animals()
 }
 }

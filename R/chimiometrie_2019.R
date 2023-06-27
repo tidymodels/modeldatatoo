@@ -50,7 +50,7 @@
 #' \doi{10.1016/j.chemolab.2020.104026}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' data_chimiometrie_2019()
 #' }
 #' @export
