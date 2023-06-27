@@ -1,0 +1,9 @@
+file: hotel_rates.rds
+file_size: 166586
+pin_hash: e8f9a6097e497248
+type: rds
+title: 'hotel_rates: a pinned 15402 x 30 data frame'
+description: ~
+tags: ~
+created: 20230627T201835Z
+api_version: 1.0
