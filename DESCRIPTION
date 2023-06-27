@@ -1,6 +1,6 @@
 Package: modeldatatoo
 Title: More Data Sets Useful for Modeling Examples
-Version: 0.0.0.9000
+Version: 0.1.0.9000
 Authors@R: c(
     person("Emil", "Hvitfeldt", , "emil.hvitfeldt@posit.co", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0679-1945")),
@@ -12,6 +12,8 @@ License: MIT + file LICENSE
 URL: https://github.com/tidymodels/modeldatatoo,
     https://tidymodels.github.io/modeldatatoo/
 BugReports: https://github.com/tidymodels/modeldatatoo/issues
+Depends: 
+    R (>= 3.6)
 Imports: 
     pins
 Suggests: 

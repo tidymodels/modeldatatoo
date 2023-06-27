@@ -27,7 +27,7 @@
 #' Information about where the data comes from...
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' data_NAME_OF_DATA_SET()
 #' }
 #' @export

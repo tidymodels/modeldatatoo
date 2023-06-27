@@ -141,7 +141,7 @@ The full data dictionary can be found here
 }
 
 \examples{
-\dontrun{
+\donttest{
 data_ames()
 }
 }

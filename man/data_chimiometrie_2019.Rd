@@ -57,7 +57,7 @@ No license was given for the data.
 }
 
 \examples{
-\dontrun{
+\donttest{
 data_chimiometrie_2019()
 }
 }

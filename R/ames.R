@@ -41,7 +41,7 @@
 #' \url{http://jse.amstat.org/v19n3/decock.pdf}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' data_ames()
 #' }
 #' @export

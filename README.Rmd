@@ -24,6 +24,12 @@ modeldatatoo contains more data sets used in documentation and testing for tidym
 
 ## Installation
 
+You can install the released version of modeldatatoo from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("modeldatatoo")
+```
+
 You can install the development version of modeldatatoo from [GitHub](https://github.com/) with:
 
 ``` r
@@ -33,15 +39,10 @@ pak::pak("tidymodels/modeldatatoo")
 
 ## Example
 
-```{r echo=FALSE}
-data_elevators <- function() {
-  pins::pin_read(pins::board_folder("data-raw/"), "elevators")
-}
-```
-
 All the data sets in this package can be accessed by functions which are prefixed with `data_`, and you call them like functions
 
 ```{r}
+library(modeldatatoo)
 data_elevators()
 ```
 
