@@ -13,11 +13,8 @@ template:
 reference:
   - title: Data Sets
     contents:
-    - data_ames
-    - data_animals
-    - data_chimiometrie_2019
-    - data_elevators
-    - attach_small_fine_foods
+    - starts_with("data_")
+    - starts_with("attach_")
   - title: Helper Functions
     contents:
     - internal_board
