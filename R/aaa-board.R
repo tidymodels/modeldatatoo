@@ -1,3 +1,3 @@
 modeldatatoo_board <- pins::board_url(
-  "https://tidymodels.github.io/modeldatatoo/pins-board/"
+  "http://modeldatatoo.tidymodels.org/dev/pins-board/"
 )
