@@ -22,14 +22,19 @@ taxi_med <- taxi_raw |>
     dropoff_community_area = factor(dropoff_community_area)
   )
 
-taxi_rec_base <- recipe(tip ~ ., data = taxi_med) %>%
-  step_date(trip_start, features = c("dow", "month"), keep_original_cols = TRUE) %>%
-  step_time(trip_start, features = c("hour", "minute"), keep_original_cols = TRUE) %>%
+taxi_rec_base <- recipe(tip ~ ., data = taxi_med) |>
+  step_date(trip_start, features = c("dow", "month"), keep_original_cols = TRUE) |>
+  step_time(trip_start, features = c("hour", "minute"), keep_original_cols = TRUE) |>
+  step_other(company) |>
   step_rm(trip_start_timestamp,
           trip_end_timestamp,
           taxi_id,
+          tips,
+          trip_start,
+          trip_start_minute,
           contains("census"),
-          contains("centroid"))
+          contains("centroid"),
+          contains("community_area"))
 
 chicago_taxi <- prep(taxi_rec_base) |>
   bake(new_data = NULL) |>
