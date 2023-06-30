@@ -5,7 +5,7 @@ library(tidymodels)
 library(janitor)
 
 # https://data.cityofchicago.org/Transportation/Taxi-Trips-2022/npd7-ywjz
-taxi_raw <- read_csv("~/Downloads/Taxi_Trips_-_2022.csv") |>
+taxi_raw <- read_csv("https://data.cityofchicago.org/api/views/e55j-2ewb/rows.csv?accessType=DOWNLOAD") |>
   clean_names()
 
 set.seed(1234)
