@@ -1,9 +1,0 @@
-file: chicago_taxi.rds
-file_size: 401586
-pin_hash: cf0e13b5f6a65774
-type: rds
-title: 'chicago_taxi: a pinned 10000 x 14 data frame'
-description: ~
-tags: ~
-created: 20230630T021032Z
-api_version: 1
