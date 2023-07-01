@@ -3,7 +3,7 @@
 export(attach_small_fine_foods)
 export(data_ames)
 export(data_animals)
-export(data_chicago_taxi)
 export(data_chimiometrie_2019)
 export(data_elevators)
+export(data_taxi)
 export(internal_board)

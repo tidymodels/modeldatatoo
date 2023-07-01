@@ -1,4 +1,4 @@
-## code to prepare `chicago_taxi` dataset goes here
+## code to prepare `taxi` dataset goes here
 
 library(tidyverse)
 library(tidymodels)
@@ -16,7 +16,7 @@ taxi_med <- taxi_raw |>
   mutate(
     tip = if_else(tips > 0, "yes", "no") |> factor(levels = c("yes", "no")),
     trip_start = mdy_hms(trip_start_timestamp),
-    local_trip = if_else(pickup_community_area == dropoff_community_area, "yes", "no") |>
+    local = if_else(pickup_community_area == dropoff_community_area, "yes", "no") |>
       factor(levels = c("yes", "no")),
     pickup_community_area = factor(pickup_community_area),
     dropoff_community_area = factor(dropoff_community_area)
@@ -34,9 +34,18 @@ taxi_rec_base <- recipe(tip ~ ., data = taxi_med) |>
           trip_start_minute,
           contains("census"),
           contains("centroid"),
-          contains("community_area"))
+          contains("community_area")) %>%
+  step_rename(
+    id := trip_id,
+    duration = trip_seconds,
+    distance = trip_miles,
+    total_cost = trip_total,
+    dow = trip_start_dow,
+    month = trip_start_month,
+    hour = trip_start_hour
+  )
 
-chicago_taxi <- prep(taxi_rec_base) |>
+taxi <- prep(taxi_rec_base) |>
   bake(new_data = NULL) |>
   relocate(tip)
 
@@ -44,5 +53,5 @@ library(pins)
 library(here)
 
 board <- board_folder(here("pkgdown/assets/pins-board"), versioned = FALSE)
-board |> pin_write(chicago_taxi, "chicago_taxi", type = "rds")
+board |> pin_write(taxi, "taxi", type = "rds")
 board |> write_board_manifest()
