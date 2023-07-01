@@ -49,12 +49,44 @@ numeric.}
 }
 }
 \section{tibble print}{
-\if{html}{\out{<div class="sourceCode {r}">}}\preformatted{data_taxi()
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{data_taxi()
+#> # A tibble: 10,000 x 14
+#>    tip   id         duration distance  fare tolls extras total_cost payment_type
+#>    <fct> <fct>         <dbl>    <dbl> <dbl> <dbl>  <dbl>      <dbl> <fct>       
+#>  1 yes   9fee331b5~      333     1.24   6.5     0    0          8   Credit Card 
+#>  2 no    b1dbc452a~     2692     5.39  25.5     0    0         25.5 Prcard      
+#>  3 yes   d5aaf396c~     1076     3.01  11.2     0    0         14.1 Mobile      
+#>  4 no    060c84fcd~     1599    18.4   45.2     0    0         45.2 Prcard      
+#>  5 yes   716dbe816~      346     1.76   7.5     0    1         11   Credit Card 
+#>  6 yes   617c96cf2~     1790    13.6   34.2     0    4.5       49.1 Credit Card 
+#>  7 yes   1e2d7bc1e~      885     3.71  11.2     0    0         12.6 Mobile      
+#>  8 yes   7145ff356~      720     4.8   14.8     0    1.5       19.6 Credit Card 
+#>  9 yes   ed985279b~     2190    18.0   44.8     0    4         59.1 Credit Card 
+#> 10 no    730f737fa~     2160    17.5   44       0    4         48.5 Credit Card 
+#> # i 9,990 more rows
+#> # i 5 more variables: company <fct>, local <fct>, dow <fct>, month <fct>,
+#> #   hour <int>
 }\if{html}{\out{</div>}}
 }
 
 \section{glimpse()}{
-\if{html}{\out{<div class="sourceCode {r}">}}\preformatted{tibble::glimpse(data_taxi())
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{tibble::glimpse(data_taxi())
+#> Rows: 10,000
+#> Columns: 14
+#> $ tip          <fct> yes, no, yes, no, yes, yes, yes, yes, yes, no, yes, yes, ~
+#> $ id           <fct> 9fee331b5a4b19daa19a149cfdfbeea91eb4dff9, b1dbc452aeb608f~
+#> $ duration     <dbl> 333, 2692, 1076, 1599, 346, 1790, 885, 720, 2190, 2160, 2~
+#> $ distance     <dbl> 1.24, 5.39, 3.01, 18.38, 1.76, 13.65, 3.71, 4.80, 18.02, ~
+#> $ fare         <dbl> 6.50, 25.50, 11.23, 45.25, 7.50, 34.25, 11.25, 14.75, 44.~
+#> $ tolls        <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+#> $ extras       <dbl> 0.0, 0.0, 0.0, 0.0, 1.0, 4.5, 0.0, 1.5, 4.0, 4.0, 5.0, 4.~
+#> $ total_cost   <dbl> 8.00, 25.50, 14.10, 45.25, 11.00, 49.06, 12.62, 19.60, 59~
+#> $ payment_type <fct> Credit Card, Prcard, Mobile, Prcard, Credit Card, Credit ~
+#> $ company      <fct> Sun Taxi, Flash Cab, City Service, Sun Taxi, Sun Taxi, Su~
+#> $ local        <fct> no, no, no, no, no, no, no, no, no, yes, no, NA, no, no, ~
+#> $ dow          <fct> Thu, Sat, Wed, Sat, Sun, Mon, Mon, Tue, Fri, Thu, Tue, Tu~
+#> $ month        <fct> Feb, Mar, Feb, Apr, Jan, Feb, Mar, Mar, Jan, Apr, Apr, Ja~
+#> $ hour         <int> 13, 12, 17, 6, 15, 17, 21, 9, 19, 12, 20, 22, 10, 10, 8, ~
 }\if{html}{\out{</div>}}
 }
 
