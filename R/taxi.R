@@ -6,6 +6,7 @@
 #' of Chicago in 2022.
 #'
 #' @param ... Arguments passed to [pins::pin_read()].
+#' @param download_dir name of director where file should be downlaoded to.
 #' @return tibble
 #'
 #' @details
@@ -59,6 +60,9 @@
 #' data_taxi()
 #' }
 #' @export
-data_taxi <- function(...) {
+data_taxi <- function(..., download_dir = NULL) {
+  if (!is.null(download_dir)) {
+    modeldatatoo_board$cache <- download_dir
+  }
   pins::pin_read(modeldatatoo_board, "taxi", ...)
 }
