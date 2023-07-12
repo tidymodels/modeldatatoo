@@ -7,10 +7,12 @@
 \url{https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew}
 }
 \usage{
-data_taxi(...)
+data_taxi(..., download_dir = NULL)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[pins:pin_read]{pins::pin_read()}}.}
+
+\item{download_dir}{name of director where file should be downlaoded to.}
 }
 \value{
 tibble
