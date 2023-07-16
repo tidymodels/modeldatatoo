@@ -2,8 +2,8 @@
 #'
 #' @description
 #'
-#' #' A data set from De Cock (2011) has 82 fields were recorded for 2,930
-#' properties in Ames IA. This version is copies from the `AmesHousing` package
+#' A data set from De Cock (2011) has 82 fields were recorded for 2,930
+#' properties in Ames IA. This version is a copy from the `AmesHousing` package
 #' but does not include a few quality columns that appear to be outcomes
 #' rather than predictors.
 #'
@@ -15,7 +15,7 @@
 #'
 #' @details
 #'
-#' The full data dictionary can be found here
+#' The full data dictionary can be found at
 #' \url{https://jse.amstat.org/v19n3/decock/DataDocumentation.txt}.
 #'
 #' # tibble print
