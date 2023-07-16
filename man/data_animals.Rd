@@ -20,7 +20,7 @@ Data set with characteristics of many animals, including the field \code{text}
 which is a long-form description of the animal.
 }
 \details{
-This data set contains quite a bit of missing data and malformed fiels.
+This data set contains quite a bit of missing data and malformed fields.
 }
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_animals()
