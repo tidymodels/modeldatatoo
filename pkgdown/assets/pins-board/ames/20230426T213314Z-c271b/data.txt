@@ -1,9 +1,0 @@
-file: ames.rds
-file_size: 153474
-pin_hash: c271b3f1d66883ea
-type: rds
-title: 'ames: a pinned 2930 x 74 data frame'
-description: ~
-tags: ~
-created: 20230426T213314Z
-api_version: 1.0
