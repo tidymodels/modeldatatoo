@@ -4,6 +4,8 @@
 
 - `data_ames()` has been removed.
 
+- `data_pharma_bioreactors()` has been added.
+
 # modeldatatoo 0.1.0
 
 First CRAN version
