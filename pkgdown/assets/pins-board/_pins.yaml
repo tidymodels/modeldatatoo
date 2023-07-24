@@ -6,6 +6,8 @@ elevators:
 - elevators/20230426T215431Z-8e16a/
 hotel_rates:
 - hotel_rates/20230627T201835Z-e8f9a/
+pharma_bioreactors:
+- pharma_bioreactors/20230724T190101Z-24892/
 small_fine_foods:
 - small_fine_foods/20230427T000852Z-3bb6e/
 taxi:

@@ -1,0 +1,9 @@
+file: pharma_bioreactors.rds
+file_size: 62
+pin_hash: 24892d65dda67248
+type: rds
+title: 'pharma_bioreactors: a pinned character vector'
+description: ~
+tags: ~
+created: 20230724T190101Z
+api_version: 1.0
