@@ -53,5 +53,14 @@ library(pins)
 library(here)
 
 board <- board_folder(here("pkgdown/assets/pins-board"), versioned = FALSE)
-board |> pin_write(taxi, "taxi", type = "rds")
+board |> pin_write(taxi, "taxi", type = "rds", versioned = TRUE)
+board |> write_board_manifest()
+
+taxi <- taxi |>
+  mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr"))) |>
+  select(-c(id, duration, fare, tolls, extras, total_cost, payment_type)) |>
+  drop_na()
+
+board <- board_folder(here("pkgdown/assets/pins-board"), versioned = FALSE)
+board |> pin_write(taxi, "taxi", type = "rds", versioned = TRUE)
 board |> write_board_manifest()
