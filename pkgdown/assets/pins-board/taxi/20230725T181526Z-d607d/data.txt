@@ -1,9 +1,0 @@
-file: taxi.rds
-file_size: 30441
-pin_hash: d607d3452178f11b
-type: rds
-title: 'taxi: a pinned 5420 x 7 data frame'
-description: ~
-tags: ~
-created: 20230725T181526Z
-api_version: 1.0
