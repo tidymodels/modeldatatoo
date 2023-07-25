@@ -4,6 +4,8 @@
 
 - `data_ames()` has been removed.
 
+- Added a data set for pharmaceutical manufacturing monitoring.
+
 # modeldatatoo 0.1.0
 
 First CRAN version

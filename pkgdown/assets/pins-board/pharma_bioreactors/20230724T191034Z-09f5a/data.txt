@@ -1,0 +1,9 @@
+file: pharma_bioreactors.rds
+file_size: 5221680
+pin_hash: 09f5a2d5f0c9f26b
+type: rds
+title: 'pharma_bioreactors: a pinned 664524 x 6 data frame'
+description: ~
+tags: ~
+created: 20230724T191034Z
+api_version: 1.0
