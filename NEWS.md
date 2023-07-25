@@ -4,7 +4,7 @@
 
 - `data_ames()` has been removed.
 
-- Added a data set for pharmaceutical manufacturing monitoring.
+- Added a data set for pharmaceutical manufacturing monitoring, named `data_pharma_bioreactors()`
 
 # modeldatatoo 0.1.0
 
