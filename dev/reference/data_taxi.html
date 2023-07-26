@@ -82,31 +82,8 @@ the modeling problem of predicting whether a rider will tip or not.</p>
 <dd><p>Whether the rider left a tip. A factor with levels
 "yes" and "no".</p></dd>
 
-<dt>id</dt>
-<dd><p>A unique identifier for the trip, as a factor.</p></dd>
-
-<dt>duration</dt>
-<dd><p>The trip duration, in seconds.</p></dd>
-
 <dt>distance</dt>
 <dd><p>The trip distance, in odometer miles.</p></dd>
-
-<dt>fare</dt>
-<dd><p>The cost of the trip fare, in USD</p></dd>
-
-<dt>tolls</dt>
-<dd><p>The cost of tolls for the trip, in USD.</p></dd>
-
-<dt>extras</dt>
-<dd><p>The cost of extra charges for the trip, in USD.</p></dd>
-
-<dt>total_cost</dt>
-<dd><p>The total cost of the trip, in USD. This is the
-sum of the previous three columns plus tip.</p></dd>
-
-<dt>payment_type</dt>
-<dd><p>Type of payment for the trip. A factor with levels
-"Credit Card", "Dispute", "Mobile", "No Charge", "Prcard", and "Unknown".</p></dd>
 
 <dt>company</dt>
 <dd><p>The taxi company, as a factor. Companies that occurred
@@ -128,68 +105,83 @@ factor.</p></dd>
 numeric.</p></dd>
 
 
+</dl><p>Previous releases of this data (with <code>version = "20230630T214846Z-643d0"</code>)
+included additional columns:</p>
+<dl><dt>id</dt>
+<dd><p>A unique identifier for the trip, as a factor.</p></dd>
+
+<dt>duration</dt>
+<dd><p>The trip duration, in seconds.</p></dd>
+
+<dt>fare</dt>
+<dd><p>The cost of the trip fare, in USD</p></dd>
+
+<dt>tolls</dt>
+<dd><p>The cost of tolls for the trip, in USD.</p></dd>
+
+<dt>extras</dt>
+<dd><p>The cost of extra charges for the trip, in USD.</p></dd>
+
+<dt>total_cost</dt>
+<dd><p>The total cost of the trip, in USD. This is the
+sum of the previous three columns plus tip.</p></dd>
+
+<dt>payment_type</dt>
+<dd><p>Type of payment for the trip. A factor with levels
+"Credit Card", "Dispute", "Mobile", "No Charge", "Prcard", and "Unknown".</p></dd>
+
+
 </dl></div>
     <div class="section level2">
     <h2 id="tibble-print">tibble print<a class="anchor" aria-label="anchor" href="#tibble-print"></a></h2>
     <p></p><div class="sourceCode r"><pre><code><span><span class="fu"><a href="../reference/data_taxi.html">data_taxi</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 10,000 x 14</span></span>
-<span><span class="co">#&gt;    tip   id         duration distance  fare tolls extras total_cost payment_type</span></span>
-<span><span class="co">#&gt;    &lt;fct&gt; &lt;fct&gt;         &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt; &lt;fct&gt;       </span></span>
-<span><span class="co">#&gt;  1 yes   9fee331b5~      333     1.24   6.5     0    0          8   Credit Card </span></span>
-<span><span class="co">#&gt;  2 no    b1dbc452a~     2692     5.39  25.5     0    0         25.5 Prcard      </span></span>
-<span><span class="co">#&gt;  3 yes   d5aaf396c~     1076     3.01  11.2     0    0         14.1 Mobile      </span></span>
-<span><span class="co">#&gt;  4 no    060c84fcd~     1599    18.4   45.2     0    0         45.2 Prcard      </span></span>
-<span><span class="co">#&gt;  5 yes   716dbe816~      346     1.76   7.5     0    1         11   Credit Card </span></span>
-<span><span class="co">#&gt;  6 yes   617c96cf2~     1790    13.6   34.2     0    4.5       49.1 Credit Card </span></span>
-<span><span class="co">#&gt;  7 yes   1e2d7bc1e~      885     3.71  11.2     0    0         12.6 Mobile      </span></span>
-<span><span class="co">#&gt;  8 yes   7145ff356~      720     4.8   14.8     0    1.5       19.6 Credit Card </span></span>
-<span><span class="co">#&gt;  9 yes   ed985279b~     2190    18.0   44.8     0    4         59.1 Credit Card </span></span>
-<span><span class="co">#&gt; 10 no    730f737fa~     2160    17.5   44       0    4         48.5 Credit Card </span></span>
-<span><span class="co">#&gt; # i 9,990 more rows</span></span>
-<span><span class="co">#&gt; # i 5 more variables: company &lt;fct&gt;, local &lt;fct&gt;, dow &lt;fct&gt;, month &lt;fct&gt;,</span></span>
-<span><span class="co">#&gt; #   hour &lt;int&gt;</span></span></code></pre><p></p></div>
+<span><span class="co">#&gt; # A tibble: 10,000 x 7</span></span>
+<span><span class="co">#&gt;    tip   distance company                      local dow   month  hour</span></span>
+<span><span class="co">#&gt;    &lt;fct&gt;    &lt;dbl&gt; &lt;fct&gt;                        &lt;fct&gt; &lt;fct&gt; &lt;fct&gt; &lt;int&gt;</span></span>
+<span><span class="co">#&gt;  1 yes      17.2  Chicago Independents         no    Thu   Feb      16</span></span>
+<span><span class="co">#&gt;  2 yes       0.88 City Service                 yes   Thu   Mar       8</span></span>
+<span><span class="co">#&gt;  3 yes      18.1  other                        no    Mon   Feb      18</span></span>
+<span><span class="co">#&gt;  4 yes      20.7  Chicago Independents         no    Mon   Apr       8</span></span>
+<span><span class="co">#&gt;  5 yes      12.2  Chicago Independents         no    Sun   Mar      21</span></span>
+<span><span class="co">#&gt;  6 yes       0.94 Sun Taxi                     yes   Sat   Apr      23</span></span>
+<span><span class="co">#&gt;  7 yes      17.5  Flash Cab                    no    Fri   Mar      12</span></span>
+<span><span class="co">#&gt;  8 yes      17.7  other                        no    Sun   Jan       6</span></span>
+<span><span class="co">#&gt;  9 yes       1.85 Taxicab Insurance Agency Llc no    Fri   Apr      12</span></span>
+<span><span class="co">#&gt; 10 yes       1.47 City Service                 no    Tue   Mar      14</span></span>
+<span><span class="co">#&gt; # i 9,990 more rows</span></span></code></pre><p></p></div>
     </div>
     <div class="section level2">
     <h2 id="glimpse-">glimpse()<a class="anchor" aria-label="anchor" href="#glimpse-"></a></h2>
     <p></p><div class="sourceCode r"><pre><code><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="fu"><a href="../reference/data_taxi.html">data_taxi</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Rows: 10,000</span></span>
-<span><span class="co">#&gt; Columns: 14</span></span>
-<span><span class="co">#&gt; $ tip          &lt;fct&gt; yes, no, yes, no, yes, yes, yes, yes, yes, no, yes, yes, ~</span></span>
-<span><span class="co">#&gt; $ id           &lt;fct&gt; 9fee331b5a4b19daa19a149cfdfbeea91eb4dff9, b1dbc452aeb608f~</span></span>
-<span><span class="co">#&gt; $ duration     &lt;dbl&gt; 333, 2692, 1076, 1599, 346, 1790, 885, 720, 2190, 2160, 2~</span></span>
-<span><span class="co">#&gt; $ distance     &lt;dbl&gt; 1.24, 5.39, 3.01, 18.38, 1.76, 13.65, 3.71, 4.80, 18.02, ~</span></span>
-<span><span class="co">#&gt; $ fare         &lt;dbl&gt; 6.50, 25.50, 11.23, 45.25, 7.50, 34.25, 11.25, 14.75, 44.~</span></span>
-<span><span class="co">#&gt; $ tolls        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~</span></span>
-<span><span class="co">#&gt; $ extras       &lt;dbl&gt; 0.0, 0.0, 0.0, 0.0, 1.0, 4.5, 0.0, 1.5, 4.0, 4.0, 5.0, 4.~</span></span>
-<span><span class="co">#&gt; $ total_cost   &lt;dbl&gt; 8.00, 25.50, 14.10, 45.25, 11.00, 49.06, 12.62, 19.60, 59~</span></span>
-<span><span class="co">#&gt; $ payment_type &lt;fct&gt; Credit Card, Prcard, Mobile, Prcard, Credit Card, Credit ~</span></span>
-<span><span class="co">#&gt; $ company      &lt;fct&gt; Sun Taxi, Flash Cab, City Service, Sun Taxi, Sun Taxi, Su~</span></span>
-<span><span class="co">#&gt; $ local        &lt;fct&gt; no, no, no, no, no, no, no, no, no, yes, no, NA, no, no, ~</span></span>
-<span><span class="co">#&gt; $ dow          &lt;fct&gt; Thu, Sat, Wed, Sat, Sun, Mon, Mon, Tue, Fri, Thu, Tue, Tu~</span></span>
-<span><span class="co">#&gt; $ month        &lt;fct&gt; Feb, Mar, Feb, Apr, Jan, Feb, Mar, Mar, Jan, Apr, Apr, Ja~</span></span>
-<span><span class="co">#&gt; $ hour         &lt;int&gt; 13, 12, 17, 6, 15, 17, 21, 9, 19, 12, 20, 22, 10, 10, 8, ~</span></span></code></pre><p></p></div>
+<span><span class="co">#&gt; Columns: 7</span></span>
+<span><span class="co">#&gt; $ tip      &lt;fct&gt; yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, y~</span></span>
+<span><span class="co">#&gt; $ distance &lt;dbl&gt; 17.19, 0.88, 18.11, 20.70, 12.23, 0.94, 17.47, 17.67, 1.85, 1~</span></span>
+<span><span class="co">#&gt; $ company  &lt;fct&gt; Chicago Independents, City Service, other, Chicago Independen~</span></span>
+<span><span class="co">#&gt; $ local    &lt;fct&gt; no, yes, no, no, no, yes, no, no, no, no, no, no, no, yes, no~</span></span>
+<span><span class="co">#&gt; $ dow      &lt;fct&gt; Thu, Thu, Mon, Mon, Sun, Sat, Fri, Sun, Fri, Tue, Tue, Sun, W~</span></span>
+<span><span class="co">#&gt; $ month    &lt;fct&gt; Feb, Mar, Feb, Apr, Mar, Apr, Mar, Jan, Apr, Mar, Mar, Apr, A~</span></span>
+<span><span class="co">#&gt; $ hour     &lt;int&gt; 16, 8, 18, 8, 21, 23, 12, 6, 12, 14, 18, 11, 12, 19, 17, 13, ~</span></span></code></pre><p></p></div>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="fu">data_taxi</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10,000 × 14</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    tip   id                duration distance  fare tolls extras total_cost</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> yes   9fee331b5a4b19da…      333     1.24   6.5     0    0          8  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> no    b1dbc452aeb608f1…     <span style="text-decoration: underline;">2</span>692     5.39  25.5     0    0         25.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> yes   d5aaf396c67e55ff…     <span style="text-decoration: underline;">1</span>076     3.01  11.2     0    0         14.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> no    060c84fcdd4570be…     <span style="text-decoration: underline;">1</span>599    18.4   45.2     0    0         45.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> yes   716dbe81659166eb…      346     1.76   7.5     0    1         11  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> yes   617c96cf2a61cc6b…     <span style="text-decoration: underline;">1</span>790    13.6   34.2     0    4.5       49.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> yes   1e2d7bc1e6d30991…      885     3.71  11.2     0    0         12.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> yes   7145ff35649e27b8…      720     4.8   14.8     0    1.5       19.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> yes   ed985279be69b438…     <span style="text-decoration: underline;">2</span>190    18.0   44.8     0    4         59.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> no    730f737fa05eb908…     <span style="text-decoration: underline;">2</span>160    17.5   44       0    4         48.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10,000 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    tip   distance company                      local dow   month  hour</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                        <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> yes      17.2  Chicago Independents         no    Thu   Feb      16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> yes       0.88 City Service                 yes   Thu   Mar       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> yes      18.1  other                        no    Mon   Feb      18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> yes      20.7  Chicago Independents         no    Mon   Apr       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> yes      12.2  Chicago Independents         no    Sun   Mar      21</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> yes       0.94 Sun Taxi                     yes   Sat   Apr      23</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> yes      17.5  Flash Cab                    no    Fri   Mar      12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> yes      17.7  other                        no    Sun   Jan       6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> yes       1.85 Taxicab Insurance Agency Llc no    Fri   Apr      12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> yes       1.47 City Service                 no    Tue   Mar      14</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 9,990 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 6 more variables: payment_type &lt;fct&gt;, company &lt;fct&gt;, local &lt;fct&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   dow &lt;fct&gt;, month &lt;fct&gt;, hour &lt;int&gt;</span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
