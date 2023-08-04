@@ -3,6 +3,7 @@
 export(attach_small_fine_foods)
 export(data_animals)
 export(data_chimiometrie_2019)
+export(data_detectors)
 export(data_elevators)
 export(data_hotel_rates)
 export(data_pharma_bioreactors)
