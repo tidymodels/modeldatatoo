@@ -25,9 +25,6 @@
     <loc>https://tidymodels.github.io/modeldatatoo/news/index.html</loc>
   </url>
   <url>
-    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_ames.html</loc>
-  </url>
-  <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/data_animals.html</loc>
   </url>
   <url>
@@ -35,6 +32,15 @@
   </url>
   <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/data_elevators.html</loc>
+  </url>
+  <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_hotel_rates.html</loc>
+  </url>
+  <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_pharma_bioreactors.html</loc>
+  </url>
+  <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_taxi.html</loc>
   </url>
   <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/index.html</loc>

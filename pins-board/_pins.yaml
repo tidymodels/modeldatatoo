@@ -1,10 +1,15 @@
-ames:
-- ames/20230426T213314Z-c271b/
 animals:
 - animals/20230426T213845Z-67a7b/
 chimiometrie_2019:
 - chimiometrie_2019/20230428T165546Z-e388a/
 elevators:
 - elevators/20230426T215431Z-8e16a/
+hotel_rates:
+- hotel_rates/20230627T201835Z-e8f9a/
+pharma_bioreactors:
+- pharma_bioreactors/20230724T191034Z-09f5a/
 small_fine_foods:
 - small_fine_foods/20230427T000852Z-3bb6e/
+taxi:
+- taxi/20230630T214846Z-643d0/
+- taxi/20230725T192705Z-b557d/
