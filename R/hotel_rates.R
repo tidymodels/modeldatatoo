@@ -38,5 +38,5 @@
 #' }
 #' @export
 data_hotel_rates <- function(...) {
-  pins::pin_read(modeldatatoo_board, "hotel_rates", ...)
+  pins::pin_read(modeldatatoo_board(), "hotel_rates", ...)
 }

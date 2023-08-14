@@ -10,5 +10,5 @@
 #'
 #' @export
 internal_board <- function() {
-  modeldatatoo_board
+  modeldatatoo_board()
 }

@@ -55,5 +55,5 @@
 #' }
 #' @export
 data_chimiometrie_2019 <- function(...) {
-  pins::pin_read(modeldatatoo_board, "chimiometrie_2019", ...)
+  pins::pin_read(modeldatatoo_board(), "chimiometrie_2019", ...)
 }

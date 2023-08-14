@@ -66,5 +66,5 @@
 #' }
 #' @export
 data_taxi <- function(...) {
-  pins::pin_read(modeldatatoo_board, "taxi", ...)
+  pins::pin_read(modeldatatoo_board(), "taxi", ...)
 }

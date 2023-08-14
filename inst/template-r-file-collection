@@ -40,7 +40,7 @@ GLIMPSE_PRINTS
 attach_NAME_OF_DATA_SET <- function(envir = parent.frame(),
                                     quiet = FALSE,
                                     ...) {
-  data <- pins::pin_read(modeldatatoo_board, "NAME_OF_DATA_SET", ...)
+  data <- pins::pin_read(modeldatatoo_board(), "NAME_OF_DATA_SET", ...)
 
   data_names <- names(data)
 

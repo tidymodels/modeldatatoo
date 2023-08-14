@@ -71,5 +71,5 @@
 #' }
 #' @export
 data_elevators <- function(...) {
-  pins::pin_read(modeldatatoo_board, "elevators", ...)
+  pins::pin_read(modeldatatoo_board(), "elevators", ...)
 }

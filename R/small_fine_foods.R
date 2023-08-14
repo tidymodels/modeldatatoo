@@ -58,7 +58,7 @@
 attach_small_fine_foods <- function(envir = parent.frame(),
                                     quiet = FALSE,
                                     ...) {
-  data <- pins::pin_read(modeldatatoo_board, "small_fine_foods", ...)
+  data <- pins::pin_read(modeldatatoo_board(), "small_fine_foods", ...)
 
   data_names <- names(data)
 

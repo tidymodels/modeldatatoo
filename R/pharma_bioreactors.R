@@ -86,5 +86,5 @@
 #' }
 #' @export
 data_pharma_bioreactors <- function(...) {
-  pins::pin_read(modeldatatoo_board, "pharma_bioreactors", ...)
+  pins::pin_read(modeldatatoo_board(), "pharma_bioreactors", ...)
 }

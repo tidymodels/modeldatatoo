@@ -34,5 +34,5 @@
 #' }
 #' @export
 data_animals <- function(...) {
-  pins::pin_read(modeldatatoo_board, "animals", ...)
+  pins::pin_read(modeldatatoo_board(), "animals", ...)
 }
