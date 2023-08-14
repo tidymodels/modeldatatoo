@@ -10,7 +10,7 @@ Description: More data sets used for demonstrating or testing
     model-related packages are contained in this package.
 License: MIT + file LICENSE
 URL: https://github.com/tidymodels/modeldatatoo,
-    https://tidymodels.github.io/modeldatatoo/
+    https://modeldatatoo.tidymodels.org/
 BugReports: https://github.com/tidymodels/modeldatatoo/issues
 Depends: 
     R (>= 3.6)
