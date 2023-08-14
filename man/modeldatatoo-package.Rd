@@ -12,7 +12,7 @@ More data sets used for demonstrating or testing model-related packages are cont
 Useful links:
 \itemize{
   \item \url{https://github.com/tidymodels/modeldatatoo}
-  \item \url{https://tidymodels.github.io/modeldatatoo/}
+  \item \url{https://modeldatatoo.tidymodels.org/}
   \item Report bugs at \url{https://github.com/tidymodels/modeldatatoo/issues}
 }
 
