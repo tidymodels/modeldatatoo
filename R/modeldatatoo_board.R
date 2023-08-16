@@ -6,7 +6,9 @@
 #' @return a pins board
 #'
 #' @examples
+#' \donttest{
 #' internal_board()
+#' }
 #'
 #' @export
 internal_board <- function() {
