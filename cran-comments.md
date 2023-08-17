@@ -1,7 +1,6 @@
 ## Comment
 
-Received CRAN notice which read: "modeldatatoo also has top-level code which should be in .onLoad.". 
-I refactored the package, such that code that tries to access the internet only triggers when functions are called, rather than once the package is loaded. Alleviating the original problem. 
+Resubmit after archival. A refactor was done to make sure internet access was needed when loading the package. This caused CRAN to detect a oversight on my behalf, where one function didn't have their examples wrapped in `\donttest{}`. This has now been fixed.
 
 All user-facing functions require internet access, and examples are thus placed in `\donttest{}`.
 
