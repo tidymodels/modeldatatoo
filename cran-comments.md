@@ -4,6 +4,8 @@ Resubmit after archival. A refactor was done to make sure internet access wasn't
 
 All user-facing functions require internet access, and examples are thus placed in `\donttest{}`.
 
+Description title has been expanded, as per request.
+
 ## R CMD check results
 
 0 errors | 0 warnings | 0 note
