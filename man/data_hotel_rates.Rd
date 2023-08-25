@@ -38,7 +38,7 @@ No license was given for the data; See the reference below for source.
 }
 \examples{
 \donttest{
-hotel_rates()
+data_hotel_rates()
 }
 }
 \references{

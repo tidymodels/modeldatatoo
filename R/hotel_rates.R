@@ -34,7 +34,7 @@
 #'
 #' @examples
 #' \donttest{
-#' hotel_rates()
+#' data_hotel_rates()
 #' }
 #' @export
 data_hotel_rates <- function(...) {
