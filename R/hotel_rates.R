@@ -33,7 +33,7 @@
 #' datasets. _Data in Brief_, 22, 41-49.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' hotel_rates()
 #' }
 #' @export
