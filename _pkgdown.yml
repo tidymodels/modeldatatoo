@@ -8,7 +8,7 @@ template:
     primary: "#CA225E"
   includes:
     in_header: |
-      <script defer data-domain="modeldata.tidymodels.org,all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>
+      <script defer data-domain="modeldatatoo.tidymodels.org,all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>
 
 reference:
   - title: Data Sets
