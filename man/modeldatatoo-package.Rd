@@ -6,7 +6,7 @@
 \alias{modeldatatoo-package}
 \title{modeldatatoo: More Data Sets Useful for Modeling Examples}
 \description{
-More data sets used for demonstrating or testing model-related packages are contained in this package.
+More data sets used for demonstrating or testing model-related packages are contained in this package. The data sets are downloaded and cached, allowing for more and bigger data sets.
 }
 \seealso{
 Useful links:

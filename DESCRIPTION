@@ -1,13 +1,14 @@
 Package: modeldatatoo
 Title: More Data Sets Useful for Modeling Examples
-Version: 0.2.0.9000
+Version: 0.2.1.9000
 Authors@R: c(
     person("Emil", "Hvitfeldt", , "emil.hvitfeldt@posit.co", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0679-1945")),
     person("Posit Software, PBC", role = c("cph", "fnd"))
   )
-Description: More data sets used for demonstrating or testing
-    model-related packages are contained in this package.
+Description: More data sets used for demonstrating or testing model-related 
+    packages are contained in this package. The data sets are downloaded and
+    cached, allowing for more and bigger data sets.
 License: MIT + file LICENSE
 URL: https://github.com/tidymodels/modeldatatoo,
     https://modeldatatoo.tidymodels.org/

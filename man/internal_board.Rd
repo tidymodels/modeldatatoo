@@ -14,6 +14,8 @@ Pins board used internally to manage download, reading, and caching of data
 sets.
 }
 \examples{
+\donttest{
 internal_board()
+}
 
 }

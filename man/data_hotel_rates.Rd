@@ -37,8 +37,8 @@ No license was given for the data; See the reference below for source.
 }
 }
 \examples{
-\dontrun{
-hotel_rates()
+\donttest{
+data_hotel_rates()
 }
 }
 \references{
