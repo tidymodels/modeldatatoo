@@ -1,0 +1,9 @@
+file: detectors.rds
+file_size: 69667
+pin_hash: 9fc74581a15f4694
+type: rds
+title: 'detectors: a pinned 6185 x 9 data frame'
+description: ~
+tags: ~
+created: 20230804T143715Z
+api_version: 1
