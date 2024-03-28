@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{building_complaints}}{
 
-A data frame with 4,235 rows and 11 columns:
+A data frame with 4,234 rows and 11 columns:
 \describe{
 \item{days_to_disposition}{Days to disposition of the complaint}
 \item{status}{Status of the complaint}
