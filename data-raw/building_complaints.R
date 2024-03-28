@@ -79,6 +79,11 @@ building_complaints <- complaints_geocoded %>%
     complaint_priority = factor(complaint_priority, levels = LETTERS[1:4])
   )
 
+building_complaints <- building_complaints %>% 
+  mutate(odd_location = if_else(borough == "Brooklyn" & latitude > 41, TRUE, FALSE)) %>% 
+  filter(!odd_location) %>% 
+  select(-odd_location)
+
 # -------------------------------------------------------------------------
 
 usethis::use_data(building_complaints, overwrite = TRUE)

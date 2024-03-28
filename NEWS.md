@@ -1,5 +1,7 @@
 # modeldatatoo (development version)
 
+- `building_complaints` is a new dataset on complaints made to the New York City Department of Buildings and the time until they are dispositioned (#38).
+
 # modeldatatoo 0.2.1
 
 # modeldatatoo 0.2.0
