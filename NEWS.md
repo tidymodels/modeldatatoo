@@ -1,6 +1,6 @@
 # modeldatatoo (development version)
 
-- `building_complaints` is a new dataset on complaints made to the New York City Department of Buildings and the time until they are dispositioned (#38).
+- `data_building_complaints()` is a new dataset on complaints made to the New York City Department of Buildings and the time until they are dispositioned (#38).
 
 - Added a data set for Prediction Data from GPT Detectors, `data_detectors()`. (#31)
 
