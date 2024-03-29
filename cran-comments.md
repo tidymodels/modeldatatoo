@@ -1,12 +1,15 @@
 ## Comment
 
-Resubmit after archival. A refactor was done to make sure internet access wasn't needed when loading the package. This caused CRAN to detect a oversight on my behalf, where one function didn't have their examples wrapped in `\donttest{}`. This has now been fixed.
-
-All user-facing functions require internet access, and examples are thus placed in `\donttest{}`.
-
-Description title has been expanded, as per request.
+Adding more functions
 
 ## R CMD check results
 
 0 errors | 0 warnings | 0 note
+
+## revdepcheck results
+
+We checked 0 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
+
+ * We saw 0 new problems
+ * We failed to check 0 packages
 
