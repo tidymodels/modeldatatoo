@@ -6,8 +6,11 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tidymodels/modeldatatoo/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/tidymodels/modeldatatoo/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tidymodels/modeldatatoo?branch=main)
+[![CRAN
+status](http://www.r-pkg.org/badges/version/modeldatatoo)](https://CRAN.R-project.org/package=modeldatatoo)
+[![Downloads](http://cranlogs.r-pkg.org/badges/modeldatatoo)](https://CRAN.R-project.org/package=modeldatatoo)
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 <!-- badges: end -->
 
 modeldatatoo contains more data sets used in documentation and testing
