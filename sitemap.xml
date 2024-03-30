@@ -25,10 +25,19 @@
     <loc>https://tidymodels.github.io/modeldatatoo/news/index.html</loc>
   </url>
   <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/building_complaints.html</loc>
+  </url>
+  <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/data_animals.html</loc>
   </url>
   <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_building_complaints.html</loc>
+  </url>
+  <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/data_chimiometrie_2019.html</loc>
+  </url>
+  <url>
+    <loc>https://tidymodels.github.io/modeldatatoo/reference/data_detectors.html</loc>
   </url>
   <url>
     <loc>https://tidymodels.github.io/modeldatatoo/reference/data_elevators.html</loc>

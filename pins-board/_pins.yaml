@@ -1,7 +1,11 @@
 animals:
 - animals/20230426T213845Z-67a7b/
+building_complaints:
+- building_complaints/20240329T185130Z-4fdfa/
 chimiometrie_2019:
 - chimiometrie_2019/20230428T165546Z-e388a/
+detectors:
+- detectors/20230804T143715Z-9fc74/
 elevators:
 - elevators/20230426T215431Z-8e16a/
 hotel_rates:

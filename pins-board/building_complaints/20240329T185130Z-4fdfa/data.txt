@@ -1,0 +1,10 @@
+file: building_complaints.rds
+file_size: 88751
+pin_hash: 4fdfa323b5041403
+type: rds
+title: 'building_complaints: a pinned 4234 x 11 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20240329T185130Z
+api_version: 1
