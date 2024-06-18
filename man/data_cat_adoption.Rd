@@ -6,7 +6,7 @@
 \alias{cat_adoption}
 \title{Cat Adoption}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2257 rows and 19 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2257 rows and 20 columns.
 }
 \source{
 \url{https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/}
@@ -28,9 +28,10 @@ A subset of the cats at the animal shelter in Long Beach, California, USA.
 \details{
 A data frame with 2257 rows and 19 columns:
 \describe{
-\item{event_time}{The time the cat spent at the shelter. The event is
-adoption or the cat being returned to the place they belong. The non-event is
-the cat being transferred to another shelter or dying.}
+\item{time}{The time the cat spent at the shelter.}
+\item{event}{Did an event occur? The event is adoption or the cat being
+returned to the place they belong. The non-event is the cat being transferred
+to another shelter or dying.}
 \item{sex}{The sex of the cat.}
 \item{neutered}{Whether the cat is neutered.}
 \item{intake_condition}{The intake condition of the cat.}
@@ -53,19 +54,19 @@ the cat being transferred to another shelter or dying.}
 }
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_cat_adoption()
-#> # A tibble: 2,257 x 19
-#>    event_time sex    neutered intake_condition intake_type    latitude longitude
-#>        <Surv> <fct>  <fct>    <fct>            <fct>             <dbl>     <dbl>
-#>  1        17  male   yes      fractious        owner_surrend~     33.8     -118.
-#>  2        98  male   yes      normal           stray              33.8     -118.
-#>  3        15+ male   yes      ill_moderatete   owner_surrend~     33.8     -118.
-#>  4        72  female yes      fractious        owner_surrend~     33.8     -118.
-#>  5        22+ male   yes      normal           owner_surrend~     33.8     -118.
-#>  6        66  male   yes      normal           owner_surrend~     33.8     -118.
-#>  7       200  female yes      other            other              33.9     -118.
-#>  8         9+ female yes      normal           owner_surrend~     33.9     -118.
-#>  9        45  male   yes      ill_mild         stray              33.8     -118.
-#> 10        38  male   no       ill_mild         stray              33.9     -118.
+#> # A tibble: 2,257 x 20
+#>     time event sex    neutered intake_condition intake_type   latitude longitude
+#>    <dbl> <dbl> <fct>  <fct>    <fct>            <fct>            <dbl>     <dbl>
+#>  1    17     1 male   yes      fractious        owner_surren~     33.8     -118.
+#>  2    98     1 male   yes      normal           stray             33.8     -118.
+#>  3    15     0 male   yes      ill_moderatete   owner_surren~     33.8     -118.
+#>  4    72     1 female yes      fractious        owner_surren~     33.8     -118.
+#>  5    22     0 male   yes      normal           owner_surren~     33.8     -118.
+#>  6    66     1 male   yes      normal           owner_surren~     33.8     -118.
+#>  7   200     1 female yes      other            other             33.9     -118.
+#>  8     9     0 female yes      normal           owner_surren~     33.9     -118.
+#>  9    45     1 male   yes      ill_mild         stray             33.8     -118.
+#> 10    38     1 male   no       ill_mild         stray             33.9     -118.
 #> # i 2,247 more rows
 #> # i 12 more variables: black <int>, brown <int>, brown_tabby <int>,
 #> #   calico <int>, cream <int>, gray <int>, gray_tabby <int>, orange <int>,
@@ -76,9 +77,10 @@ the cat being transferred to another shelter or dying.}
 \section{glimpse()}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{tibble::glimpse(data_cat_adoption())
 #> Rows: 2,257
-#> Columns: 19
-#> $ event_time       <Surv> <Surv[26 x 2]>
-#> $ sex              <fct> male, male, male, female, male, male, female, female~
+#> Columns: 20
+#> $ time             <dbl> 17, 98, 15, 72, 22, 66, 200, 9, 45, 38, 9, 170, 39, 1~
+#> $ event            <dbl> 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0,~
+#> $ sex              <fct> male, male, male, female, male, male, female, female,~
 #> $ neutered         <fct> yes, yes, yes, yes, yes, yes, yes, yes, yes, no, yes,~
 #> $ intake_condition <fct> fractious, normal, ill_moderatete, fractious, normal,~
 #> $ intake_type      <fct> owner_surrender, stray, owner_surrender, owner_surren~

@@ -10,9 +10,10 @@
 #'
 #' A data frame with 2257 rows and 19 columns:
 #' \describe{
-#'   \item{event_time}{The time the cat spent at the shelter. The event is 
-#' adoption or the cat being returned to the place they belong. The non-event is
-#' the cat being transferred to another shelter or dying.}
+#'   \item{time}{The time the cat spent at the shelter.}
+#'   \item{event}{Did an event occur? The event is adoption or the cat being 
+#' returned to the place they belong. The non-event is the cat being transferred
+#' to another shelter or dying.}
 #'   \item{sex}{The sex of the cat.}
 #'   \item{neutered}{Whether the cat is neutered.}
 #'   \item{intake_condition}{The intake condition of the cat.}

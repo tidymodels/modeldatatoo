@@ -112,9 +112,8 @@ col_count_rm <- names(col_counts)[col_counts <= 20]
 cat_adoption <- 
   cats_with_color_dummies %>% 
   select(-all_of(col_count_rm)) %>% 
-  mutate(event_time = Surv(time, event)) %>% 
-  select(-time, -event, -animal_id, -jurisdiction) %>% 
-  relocate(event_time) %>% 
+  select(-animal_id, -jurisdiction) %>% 
+  relocate(time, event) %>% 
   relocate(neutered, .after = sex)
 
 
