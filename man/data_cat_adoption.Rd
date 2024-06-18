@@ -6,7 +6,7 @@
 \alias{cat_adoption}
 \title{Cat Adoption}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2257 rows and 18 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2257 rows and 19 columns.
 }
 \source{
 \url{https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/}
@@ -26,12 +26,13 @@ tibble
 A subset of the cats at the animal shelter in Long Beach, California, USA.
 }
 \details{
-A data frame with 2257 rows and 18 columns:
+A data frame with 2257 rows and 19 columns:
 \describe{
 \item{event_time}{The time the cat spent at the shelter. The event is
 adoption or the cat being returned to the place they belong. The non-event is
 the cat being transferred to another shelter or dying.}
-\item{sex}{The sex of the cat and whether they are spayed or neutered.}
+\item{sex}{The sex of the cat.}
+\item{neutered}{Whether the cat is neutered.}
 \item{intake_condition}{The intake condition of the cat.}
 \item{intake_type}{The type of intake.}
 \item{latitude}{Latitude of the intersection/cross street of intake or capture.}
@@ -52,42 +53,33 @@ the cat being transferred to another shelter or dying.}
 }
 \section{tibble print}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{data_cat_adoption()
-#> # A tibble: 2,257 x 18
-#>    event_time sex    intake_condition intake_type latitude longitude black brown
-#>        <Surv> <fct>  <fct>            <fct>          <dbl>     <dbl> <int> <int>
-#>  1         17 neute~ fractious        owner_surr~     33.8     -118.     0     0
-#>  2         98 neute~ normal           stray           33.8     -118.     0     0
-#>  3         15 neute~ ill_moderatete   owner_surr~     33.8     -118.     0     0
-#>  4         72 spayed fractious        owner_surr~     33.8     -118.     1     0
-#>  5         22 neute~ normal           owner_surr~     33.8     -118.     0     0
-#>  6         66 neute~ normal           owner_surr~     33.8     -118.     1     0
-#>  7        200 spayed other            other           33.9     -118.     0     0
-#>  8          9 spayed normal           owner_surr~     33.9     -118.     1     0
-#>  9         45 neute~ ill_mild         stray           33.8     -118.     0     0
-#> 10         38 male   ill_mild         stray           33.9     -118.     0     0
-#>             1 sex    intake_condition intake_type latitude longitude black brown
-#>             1 <fct>  <fct>            <fct>          <dbl>     <dbl> <int> <int>
-#>  1          0 neute~ fractious        owner_surr~     33.8     -118.     0     0
-#>  2          1 neute~ normal           stray           33.8     -118.     0     0
-#>  3          0 neute~ ill_moderatete   owner_surr~     33.8     -118.     0     0
-#>  4          1 spayed fractious        owner_surr~     33.8     -118.     1     0
-#>  5          1 neute~ normal           owner_surr~     33.8     -118.     0     0
-#>  6          0 neute~ normal           owner_surr~     33.8     -118.     1     0
-#>  7          1 spayed other            other           33.9     -118.     0     0
-#>  8          1 spayed normal           owner_surr~     33.9     -118.     1     0
+#> # A tibble: 2,257 x 19
+#>    event_time sex    neutered intake_condition intake_type    latitude longitude
+#>        <Surv> <fct>  <fct>    <fct>            <fct>             <dbl>     <dbl>
+#>  1        17  male   yes      fractious        owner_surrend~     33.8     -118.
+#>  2        98  male   yes      normal           stray              33.8     -118.
+#>  3        15+ male   yes      ill_moderatete   owner_surrend~     33.8     -118.
+#>  4        72  female yes      fractious        owner_surrend~     33.8     -118.
+#>  5        22+ male   yes      normal           owner_surrend~     33.8     -118.
+#>  6        66  male   yes      normal           owner_surrend~     33.8     -118.
+#>  7       200  female yes      other            other              33.9     -118.
+#>  8         9+ female yes      normal           owner_surrend~     33.9     -118.
+#>  9        45  male   yes      ill_mild         stray              33.8     -118.
+#> 10        38  male   no       ill_mild         stray              33.9     -118.
 #> # i 2,247 more rows
-#> # i 10 more variables: brown_tabby <int>, calico <int>, cream <int>,
-#> #   gray <int>, gray_tabby <int>, orange <int>, orange_tabby <int>, tan <int>,
-#> #   tortie <int>, white <int>
+#> # i 12 more variables: black <int>, brown <int>, brown_tabby <int>,
+#> #   calico <int>, cream <int>, gray <int>, gray_tabby <int>, orange <int>,
+#> #   orange_tabby <int>, tan <int>, tortie <int>, white <int>
 }\if{html}{\out{</div>}}
 }
 
 \section{glimpse()}{
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{tibble::glimpse(data_cat_adoption())
 #> Rows: 2,257
-#> Columns: 18
+#> Columns: 19
 #> $ event_time       <Surv> <Surv[26 x 2]>
-#> $ sex              <fct> neutered, neutered, neutered, spayed, neutered, neut~
+#> $ sex              <fct> male, male, male, female, male, male, female, female~
+#> $ neutered         <fct> yes, yes, yes, yes, yes, yes, yes, yes, yes, no, yes,~
 #> $ intake_condition <fct> fractious, normal, ill_moderatete, fractious, normal,~
 #> $ intake_type      <fct> owner_surrender, stray, owner_surrender, owner_surren~
 #> $ latitude         <dbl> 33.81065, 33.82919, 33.77225, 33.76832, 33.77914, 33.~

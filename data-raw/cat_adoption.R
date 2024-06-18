@@ -72,6 +72,16 @@ cats <- raw %>%
   select(time, event, contains("color"), sex, intake_condition, intake_type, 
          jurisdiction, latitude, longitude, animal_id) %>% 
   mutate(
+    neutered = case_when(
+      sex %in% c("neutered", "spayed") ~ "yes",
+      sex == "unknown" ~ "unknown",
+      TRUE ~ "no"
+    ),
+    sex = case_when(
+      sex == "neutered" ~ "male",
+      sex == "spayed" ~ "female",
+      TRUE ~ sex
+    ),
     # clean up color labels
     primary_color = harmonize_colors(primary_color),
     secondary_color = harmonize_colors(secondary_color),
@@ -96,7 +106,7 @@ cats_with_color_dummies <- cats %>%
   prep() %>% 
   bake(new_data = NULL)
 
-col_counts <- map_int(cats_with_color_dummies %>% select(-(1:9)), sum)
+col_counts <- map_int(cats_with_color_dummies %>% select(-(1:10)), sum)
 col_count_rm <- names(col_counts)[col_counts <= 20]  
 
 cat_adoption <- 
@@ -104,7 +114,8 @@ cat_adoption <-
   select(-all_of(col_count_rm)) %>% 
   mutate(event_time = Surv(time, event)) %>% 
   select(-time, -event, -animal_id, -jurisdiction) %>% 
-  relocate(event_time)
+  relocate(event_time) %>% 
+  relocate(neutered, .after = sex)
 
 
 

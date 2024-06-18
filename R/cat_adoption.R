@@ -8,12 +8,13 @@
 #'
 #' @details
 #'
-#' A data frame with 2257 rows and 18 columns:
+#' A data frame with 2257 rows and 19 columns:
 #' \describe{
 #'   \item{event_time}{The time the cat spent at the shelter. The event is 
 #' adoption or the cat being returned to the place they belong. The non-event is
 #' the cat being transferred to another shelter or dying.}
-#'   \item{sex}{The sex of the cat and whether they are spayed or neutered.}
+#'   \item{sex}{The sex of the cat.}
+#'   \item{neutered}{Whether the cat is neutered.}
 #'   \item{intake_condition}{The intake condition of the cat.}
 #'   \item{intake_type}{The type of intake.}
 #'   \item{latitude}{Latitude of the intersection/cross street of intake or capture.}
