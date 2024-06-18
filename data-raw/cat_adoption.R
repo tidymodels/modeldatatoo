@@ -110,6 +110,9 @@ cat_adoption <-
 
 # write to pin -----------------------------------------------------------
 
+# temporary alternative
+usethis::use_data(cat_adoption)
+
 # library(pins)
 # library(here)
 

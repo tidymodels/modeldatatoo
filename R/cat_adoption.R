@@ -54,5 +54,9 @@
 #' }
 #' @export
 data_cat_adoption <- function(...) {
-  pins::pin_read(modeldatatoo_board(), "cat_adoption", ...)
+  cat_adoption
+  #pins::pin_read(modeldatatoo_board(), "cat_adoption", ...)
 }
+
+#' @rdname data_cat_adoption
+"cat_adoption"
